@@ -1,0 +1,29 @@
+|wddl_dflipflop
+d_i => d_i.IN1
+prechrg_i => prechrg_i.IN1
+clk => clk.IN2
+q_o <= dflipflop:flop1.port2
+qbar_o <= dflipflop:flop2.port2
+
+
+|wddl_dflipflop|precharge_input:input_d
+a_i => nor1.IN0
+a_i => nor2.IN0
+prechrg_i => nor1.IN1
+prechrg_i => nor2.IN1
+a_o <= nor2.DB_MAX_OUTPUT_PORT_TYPE
+not_a_o <= nor1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wddl_dflipflop|dflipflop:flop1
+clk => q~reg0.CLK
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|wddl_dflipflop|dflipflop:flop2
+clk => q~reg0.CLK
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

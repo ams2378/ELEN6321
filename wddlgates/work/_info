@@ -1,0 +1,113 @@
+m255
+cModel Technology
+d/home/user2/spring13/asc2171
+vdflipflop
+I;9VE61B4DRo7c::aQBkQ_1
+V9@K`jS_Rf9fdST4K0;YR01
+d/home/user2/spring13/asc2171/avlsi/project/wddlgates
+w1360811128
+F/home/user2/spring13/asc2171/avlsi/project/wddlgates/dflipflops.v
+L0 1
+OE;L;5.8e;17
+r1
+31
+o-work work
+vprecharge_input
+If7;<E=A5>[Lbza7>TLXJX2
+VZeNE0<]k2R]jP1<E?c0ni0
+d/home/user2/spring13/asc2171/avlsi/project/wddlgates
+w1360813269
+F/home/user2/spring13/asc2171/avlsi/project/wddlgates/precharge_input.v
+L0 1
+OE;L;5.8e;17
+r1
+31
+o-work work
+vprechargeinput_tb
+I4Y9R2`e?J7QI5eG5V;7ne2
+VCWL3OViUCLQ0k@H8aE6h[0
+d/home/user2/spring13/asc2171/avlsi/project/wddlgates
+w1360877313
+F/home/user2/spring13/asc2171/avlsi/project/wddlgates/prechargeinput_tb.v
+L0 1
+OE;L;5.8e;17
+r1
+31
+o-work work
+vwddl_dflipflop
+IbmNLDQhI]3RnXSEzj;QhZ0
+VhW<[b[>]gH1ZWgdmJkYl41
+d/home/user2/spring13/asc2171/avlsi/project/wddlgates
+w1360964440
+F/home/user2/spring13/asc2171/avlsi/project/wddlgates/wddl_dflipflop.v
+L0 1
+OE;L;5.8e;17
+r1
+31
+o-work work
+vwddl_dflipflop_tb
+IQ8hl:z1[VBGaI3i3Z^TbK2
+Va?hLlZKo@B7;_fES32_WI0
+d/home/user2/spring13/asc2171/avlsi/project/wddlgates
+w1360966624
+F/home/user2/spring13/asc2171/avlsi/project/wddlgates/wddl_dflipflop_tb.v
+L0 1
+OE;L;5.8e;17
+r1
+31
+o-work work
+vwddl_or
+Imo]3<^`djgR2JVQ5j1EUS3
+VMDSmjZZY:N;N^<AU:dS>U1
+d/home/user2/spring13/asc2171/avlsi/project/wddlgates
+w1360868036
+F/home/user2/spring13/asc2171/avlsi/project/wddlgates/wddl_or.v
+L0 1
+OE;L;5.8e;17
+r1
+31
+o-work work
+vwddl_or_tb
+ISlT^?YE[1e92>K2=>h43:1
+V^WlJ>RiHno:YQT``l9JnU2
+d/home/user2/spring13/asc2171/avlsi/project/wddlgates
+w1360816612
+F/home/user2/spring13/asc2171/avlsi/project/wddlgates/wddl_or_tb.v
+L0 1
+OE;L;5.8e;17
+r1
+31
+o-work work
+vwddland
+I6iLA7[c<z_<IUj5Vnd;eB3
+VR98_^mE[HfG8jC46UjiP63
+d/home/user2/spring13/asc2171/avlsi/project/wddlgates
+w1360868305
+F/home/user2/spring13/asc2171/avlsi/project/wddlgates/wddland.v
+L0 1
+OE;L;5.8e;17
+r1
+31
+o-work work
+vwddland_or
+I9ee>Ub18a92anY7K]S3S^2
+VcaQIei]0APJeUh_XMeRYe0
+d/home/user2/spring13/asc2171/avlsi/project/wddlgates
+w1360815675
+F/home/user2/spring13/asc2171/avlsi/project/wddlgates/wddl_or.v
+L0 1
+OE;L;5.8e;17
+r1
+31
+o-work work
+vwddland_tb
+ICRFK?4<7TW046?^@[5<Jk0
+V_3mD?Ygdg:20^W4W>T3O>1
+d/home/user2/spring13/asc2171/avlsi/project/wddlgates
+w1360865581
+F/home/user2/spring13/asc2171/avlsi/project/wddlgates/wddland_tb.v
+L0 1
+OE;L;5.8e;17
+r1
+31
+o-work work

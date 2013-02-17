@@ -1,0 +1,24 @@
+module wddland (
+	a_i      , // first input
+ 	b_i      , // Second input
+	prechrg_i    , // precharge evaluate signal input
+ 	and_o,       // and output
+	nand_o
+);
+ //Input declaration
+ input a_i;
+ input b_i;
+ input prechrg_i;
+ //Ouput declaration
+ output and_o;
+ output nand_o;
+ //Port Data types
+ wire  a_n;
+ wire  b_n;
+ wire  ci;
+ wire  sum;
+ wire  co;
+  //Code starts here
+ assign {co,sum} = a + b + ci;
+ 
+ endmodule // End of Module addbit

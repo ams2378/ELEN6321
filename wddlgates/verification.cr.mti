@@ -1,0 +1,64 @@
+/home/user2/spring13/asc2171/avlsi/project/wddlgates/wddl_or_tb.v {1 {vlog -work work /home/user2/spring13/asc2171/avlsi/project/wddlgates/wddl_or_tb.v
+Model Technology ModelSim SE vlog 5.8e Compiler 2004.08 Aug 28 2004
+-- Compiling module wddl_or_tb
+
+Top level modules:
+	wddl_or_tb
+
+} {} {}} /home/user2/spring13/asc2171/avlsi/project/wddlgates/precharge_input.v {1 {vlog -work work /home/user2/spring13/asc2171/avlsi/project/wddlgates/precharge_input.v
+Model Technology ModelSim SE vlog 5.8e Compiler 2004.08 Aug 28 2004
+-- Compiling module precharge_input
+
+Top level modules:
+	precharge_input
+
+} {} {}} /home/user2/spring13/asc2171/avlsi/project/wddlgates/wddl_dflipflop.v {1 {vlog -work work /home/user2/spring13/asc2171/avlsi/project/wddlgates/wddl_dflipflop.v
+Model Technology ModelSim SE vlog 5.8e Compiler 2004.08 Aug 28 2004
+-- Compiling module wddl_dflipflop
+
+Top level modules:
+	wddl_dflipflop
+
+} {} {}} /home/user2/spring13/asc2171/avlsi/project/wddlgates/prechargeinput_tb.v {1 {vlog -work work /home/user2/spring13/asc2171/avlsi/project/wddlgates/prechargeinput_tb.v
+Model Technology ModelSim SE vlog 5.8e Compiler 2004.08 Aug 28 2004
+-- Compiling module prechargeinput_tb
+
+Top level modules:
+	prechargeinput_tb
+
+} {} {}} /home/user2/spring13/asc2171/avlsi/project/wddlgates/wddland.v {1 {vlog -work work /home/user2/spring13/asc2171/avlsi/project/wddlgates/wddland.v
+Model Technology ModelSim SE vlog 5.8e Compiler 2004.08 Aug 28 2004
+-- Compiling module wddland
+
+Top level modules:
+	wddland
+
+} {} {}} /home/user2/spring13/asc2171/avlsi/project/wddlgates/wddl_dflipflop_tb.v {1 {vlog -work work /home/user2/spring13/asc2171/avlsi/project/wddlgates/wddl_dflipflop_tb.v
+Model Technology ModelSim SE vlog 5.8e Compiler 2004.08 Aug 28 2004
+-- Compiling module wddl_dflipflop_tb
+
+Top level modules:
+	wddl_dflipflop_tb
+
+} {} {}} /home/user2/spring13/asc2171/avlsi/project/wddlgates/wddl_or.v {1 {vlog -work work /home/user2/spring13/asc2171/avlsi/project/wddlgates/wddl_or.v
+Model Technology ModelSim SE vlog 5.8e Compiler 2004.08 Aug 28 2004
+-- Compiling module wddl_or
+
+Top level modules:
+	wddl_or
+
+} {} {}} /home/user2/spring13/asc2171/avlsi/project/wddlgates/dflipflops.v {1 {vlog -work work /home/user2/spring13/asc2171/avlsi/project/wddlgates/dflipflops.v
+Model Technology ModelSim SE vlog 5.8e Compiler 2004.08 Aug 28 2004
+-- Compiling module dflipflop
+
+Top level modules:
+	dflipflop
+
+} {} {}} /home/user2/spring13/asc2171/avlsi/project/wddlgates/wddland_tb.v {1 {vlog -work work /home/user2/spring13/asc2171/avlsi/project/wddlgates/wddland_tb.v
+Model Technology ModelSim SE vlog 5.8e Compiler 2004.08 Aug 28 2004
+-- Compiling module wddland_tb
+
+Top level modules:
+	wddland_tb
+
+} {} {}}

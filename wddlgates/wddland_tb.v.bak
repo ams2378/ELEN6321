@@ -1,0 +1,74 @@
+module wddland_tb();
+reg clk_50;
+reg prechrg_i;
+reg a;
+reg b;
+
+
+wire and_o;
+wire nand_o;
+
+wddland U0 ( 
+  .a_i    (a_i), 
+  .b_i  (b_i), 
+  .prechrg_i (prechrg_i), 
+  .and_o  (and_o),
+  .nand_o (nand_o)
+ ); 
+
+
+
+
+  initial begin
+    clk = 0;
+    prechrg_i =0;
+    a_i = 1;
+    b_i =1;
+ end 
+    
+  always  
+    #20 clk = !clk; 
+#10 prechrg_i = !prechrg_i;
+
+  initial 
+  #100 $finish; 
+
+
+initial begin
+$timeformat(-9, 1, " ns", 6);
+clk = 1’b0; // time = 0
+a_i= 1; b_i = 1;
+@(negedge clk) //will wait for next negative edge of the clock (t=20)
+a_i= 1; b_i = 0;
+
+@(negedge clk) //will wait for next negative edge of the clock (t=
+a_i= 0; b_i = 1;
+@(negedge clk) //will wait for next negative edge of the clock (t=
+a_i= 1; b_i = 1;
+@(negedge clk) //will wait for next negative edge of the clock (t=
+
+a_i= 1; b_i = 1;
+@(negedge clk) //will wait for next negative edge of the clock (t=
+
+a_i= 1; b_i = 1;
+@(negedge clk) //will wait for next negative edge of the clock (t=20)
+a_i= 1; b_i = 0;
+
+@(negedge clk) //will wait for next negative edge of the clock (t=
+a_i= 0; b_i = 1;
+@(negedge clk) //will wait for next negative edge of the clock (t=
+a_i= 1; b_i = 1;
+@(negedge clk) //will wait for next negative edge of the clock (t=
+
+a_i= 1; b_i = 1;
+@(negedge clk) //will wait for next negative edge of the clock (t=
+
+a_i= 1; b_i = 1;
+$finish; // to shut down the simulation
+end //initial
+
+
+
+
+
+endmodule

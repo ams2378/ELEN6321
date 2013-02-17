@@ -1,0 +1,6 @@
+module prechargeinput (
+	a_i      , // first input
+	prechrg_i    , // precharge evaluate signal input
+ 	a_o,       // and output
+	nota_o
+);

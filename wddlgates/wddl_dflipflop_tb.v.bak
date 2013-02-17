@@ -1,0 +1,18 @@
+module wddl_dflipflop_tb();
+
+
+
+//module dflipflop(clk, d, q);
+reg prechrg_i,d_i;
+wire q_o,qbar_o;
+
+wddl_dflipflop floptest(
+	.d_i(d_i)      , // first input
+	.prechrg_i(prechrg_i)     , // precharge evaluate signal input
+ 	.q_o(q_o),       // and output
+	.qbar_o(qbar_o)
+);
+
+
+
+

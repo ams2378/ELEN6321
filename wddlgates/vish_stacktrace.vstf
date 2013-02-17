@@ -1,0 +1,43 @@
+# Current time Wed Feb 13 21:40:03 2013
+# ModelSim Stack Trace
+# Program = vish
+# Id = "5.8e"
+# Version = "2004.08"
+# Date = "Aug 28 2004"
+# Platform = linux
+# 0    0x003cdba9: '<unknown (@0x3cdba9)>'
+# 1    0x080ebf03: '<unknown (@0x80ebf03)>'
+# 2    0x080ec00f: '<unknown (@0x80ec00f)>'
+# 3    0x080ee2d8: '<unknown (@0x80ee2d8)>'
+# 4    0x080ee838: '<unknown (@0x80ee838)>'
+# 5    0x0808116f: '<unknown (@0x808116f)>'
+# 6    0x081bbdc0: '<unknown (@0x81bbdc0)>'
+# 7    0x081f0ce5: '<unknown (@0x81f0ce5)>'
+# 8    0x081f13f7: '<unknown (@0x81f13f7)>'
+# 9    0x081bc546: '<unknown (@0x81bc546)>'
+# 10   0x081c05f7: '<unknown (@0x81c05f7)>'
+# 11   0x081d5ce2: '<unknown (@0x81d5ce2)>'
+# 12   0x081bc797: '<unknown (@0x81bc797)>'
+# 13   0x081f7fab: '<unknown (@0x81f7fab)>'
+# 14   0x081d5ce2: '<unknown (@0x81d5ce2)>'
+# 15   0x081bc797: '<unknown (@0x81bc797)>'
+# 16   0x081d5f00: '<unknown (@0x81d5f00)>'
+# 17   0x081bc797: '<unknown (@0x81bc797)>'
+# 18   0x081f7fab: '<unknown (@0x81f7fab)>'
+# 19   0x081d5ce2: '<unknown (@0x81d5ce2)>'
+# 20   0x081bc797: '<unknown (@0x81bc797)>'
+# 21   0x081f7fab: '<unknown (@0x81f7fab)>'
+# 22   0x081f0ce5: '<unknown (@0x81f0ce5)>'
+# 23   0x081f13f7: '<unknown (@0x81f13f7)>'
+# 24   0x081fd3dc: '<unknown (@0x81fd3dc)>'
+# 25   0x081fcc87: '<unknown (@0x81fcc87)>'
+# 26   0x081eec52: '<unknown (@0x81eec52)>'
+# 27   0x081eef3a: '<unknown (@0x81eef3a)>'
+# 28   0x081462e8: '<unknown (@0x81462e8)>'
+# 29   0x0814c7d8: '<unknown (@0x814c7d8)>'
+# 30   0x080a7b59: '<unknown (@0x80a7b59)>'
+# 31   0x080a8ebd: '<unknown (@0x80a8ebd)>'
+# 32   0x00373e97: '<unknown (@0x373e97)>'
+# 33   0x0807972c: '<unknown (@0x807972c)>'
+# End of Stack Trace
+

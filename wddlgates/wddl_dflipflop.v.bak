@@ -1,0 +1,7 @@
+module wddland (
+	d_i      , // first input
+ 	dbar_i      , // Second input
+	clk    , // precharge evaluate signal input
+ 	q_o,       // and output
+	qbar_o
+);
