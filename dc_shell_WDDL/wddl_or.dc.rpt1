@@ -1,0 +1,540 @@
+1
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : area
+Design : wddl_or
+Version: A-2007.12-SP4
+Date   : Mon Feb 18 20:33:58 2013
+****************************************
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /tools2/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+
+Number of ports:                5
+Number of nets:                13
+Number of cells:               10
+Number of references:           3
+
+Combinational area:         50.400002
+Noncombinational area:       0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:            50.400002
+Total area:                 undefined
+1
+Loading db file '/tools2/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db'
+Information: Propagating switching activity (medium effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort medium
+Design : wddl_or
+Version: A-2007.12-SP4
+Date   : Mon Feb 18 20:34:00 2013
+****************************************
+
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /tools2/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+wddl_or                                1.28e-03 1.51e-03   38.374 2.80e-03 100.0
+1
+ 
+****************************************
+Report : design
+Design : wddl_or
+Version: A-2007.12-SP4
+Date   : Mon Feb 18 20:34:00 2013
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /tools2/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+
+Local Link Library:
+
+    {/tools2/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db}
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : tt_1p2v_25c
+    Library : scx3_cmos8rf_lpvt_tt_1p2v_25c
+    Process :   1.00
+    Temperature :  25.00
+    Voltage :   1.20
+    Interconnect Model : balanced_tree
+
+Wire Loading Model:
+
+    No wire loading specified.
+
+
+Wire Loading Model Mode: top.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    None Required
+
+Design Parameters:
+
+    None specified.
+1
+ 
+****************************************
+Report : cell
+Design : wddl_or
+Version: A-2007.12-SP4
+Date   : Mon Feb 18 20:34:00 2013
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U7                        INVXLTS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U8                        INVXLTS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U9                        INVXLTS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U10                       INVXLTS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U11                       INVXLTS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U12                       INVXLTS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U13                       NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U14                       OR2XLTS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          7.200000  
+U15                       NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U16                       NOR2XLTS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+--------------------------------------------------------------------------------
+Total 10 cells                                            50.400002
+1
+ 
+****************************************
+Report : port
+        -verbose
+Design : wddl_or
+Version: A-2007.12-SP4
+Date   : Mon Feb 18 20:34:00 2013
+****************************************
+
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+a_i            in      0.0000   0.0000   --       0.00   --         
+b_i            in      0.0000   0.0000   --       0.00   --         
+prechrg_i      in      0.0000   0.0000   --       0.00   --         
+nor_o          out     0.0010   0.0000   --      --      --         
+or_o           out     0.0010   0.0000   --      --      --         
+
+
+              External  Max             Min                Min       Min
+              Number    Wireload        Wireload           Pin       Wire
+Port          Points    Model           Model              Load      Load
+--------------------------------------------------------------------------------
+a_i                1      --              --              --        -- 
+b_i                1      --              --              --        -- 
+prechrg_i          1      --              --              --        -- 
+nor_o              1      --              --              --        -- 
+or_o               1      --              --              --        -- 
+
+                    Input Delay
+                  Min             Max       Related   Max
+Input Port    Rise    Fall    Rise    Fall   Clock  Fanout
+--------------------------------------------------------------------------------
+a_i           --      --      --      --      --      2.00
+b_i           --      --      --      --      --      2.00
+prechrg_i     --      --      --      --      --      2.00
+
+
+               Max Drive      Min Drive      Resistance    Min    Min       Cell
+Input Port    Rise    Fall   Rise    Fall   Max     Min    Cap    Fanout    Deg
+--------------------------------------------------------------------------------
+a_i           --      --     --      --     --      --     --     --        -- 
+b_i           --      --     --      --     --      --     --     --        -- 
+prechrg_i     --      --     --      --     --      --     --     --        -- 
+
+
+               Max Tran        Min Tran
+Input Port    Rise    Fall    Rise    Fall
+--------------------------------------------------------------------------------
+a_i           --      --      --      -- 
+b_i           --      --      --      -- 
+prechrg_i     --      --      --      -- 
+
+
+                    Output Delay
+                  Min             Max      Related  Fanout
+Output Port   Rise    Fall    Rise    Fall  Clock     Load
+--------------------------------------------------------------------------------
+nor_o         --      --      --      --      --      0.00
+or_o          --      --      --      --      --      0.00
+
+1
+ 
+****************************************
+Report : compile_options
+Design : wddl_or
+Version: A-2007.12-SP4
+Date   : Mon Feb 18 20:34:00 2013
+****************************************
+
+Design                                   Compile Option         Value
+--------------------------------------------------------------------------------
+wddl_or                                  flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+                                         fix_multiple_port_nets feedthroughs
+                                                                constants
+                                                                outputs
+                                                                buffer_constants
+                                         isolate_port           disabled
+--------------------------------------------------------------------------------
+1
+ 
+****************************************
+Report : constraint
+        -all_violators
+        -verbose
+Design : wddl_or
+Version: A-2007.12-SP4
+Date   : Mon Feb 18 20:34:00 2013
+****************************************
+
+
+    Net: a_i
+
+    max_capacitance        0.00
+  - Capacitance            0.00
+  ------------------------------
+    Slack                  0.00  (VIOLATED: increase signficant digits)
+
+
+    Net: b_i
+
+    max_capacitance        0.00
+  - Capacitance            0.00
+  ------------------------------
+    Slack                  0.00  (VIOLATED: increase signficant digits)
+
+
+    Net: prechrg_i
+
+    max_capacitance        0.00
+  - Capacitance            0.00
+  ------------------------------
+    Slack                  0.00  (VIOLATED: increase signficant digits)
+
+
+    Design: wddl_or
+
+    max_area               0.00
+  - Current Area          50.40
+  ------------------------------
+    Slack                -50.40  (VIOLATED)
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 100
+        -max_paths 20
+Design : wddl_or
+Version: A-2007.12-SP4
+Date   : Mon Feb 18 20:34:00 2013
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: b_i (input port)
+  Endpoint: nor_o (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  b_i (in)                                 0.00       0.00 f
+  U7/Y (INVXLTS)                           0.08       0.08 r
+  U8/Y (INVXLTS)                           0.10       0.18 f
+  U14/Y (OR2XLTS)                          0.38       0.56 f
+  U13/Y (NOR2XLTS)                         0.18       0.74 r
+  nor_o (out)                              0.00       0.74 r
+  data arrival time                                   0.74
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: prechrg_i (input port)
+  Endpoint: nor_o (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  prechrg_i (in)                           0.00       0.00 f
+  U9/Y (INVXLTS)                           0.08       0.08 r
+  U10/Y (INVXLTS)                          0.10       0.18 f
+  U14/Y (OR2XLTS)                          0.36       0.54 f
+  U13/Y (NOR2XLTS)                         0.18       0.72 r
+  nor_o (out)                              0.00       0.72 r
+  data arrival time                                   0.72
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: b_i (input port)
+  Endpoint: or_o (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  b_i (in)                                 0.00       0.00 f
+  U7/Y (INVXLTS)                           0.08       0.08 r
+  U8/Y (INVXLTS)                           0.10       0.18 f
+  U16/Y (NOR2XLTS)                         0.19       0.37 r
+  U15/Y (NOR2XLTS)                         0.12       0.48 f
+  or_o (out)                               0.00       0.48 f
+  data arrival time                                   0.48
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: a_i (input port)
+  Endpoint: or_o (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  a_i (in)                                 0.00       0.00 f
+  U11/Y (INVXLTS)                          0.08       0.08 r
+  U12/Y (INVXLTS)                          0.10       0.18 f
+  U16/Y (NOR2XLTS)                         0.17       0.36 r
+  U15/Y (NOR2XLTS)                         0.12       0.48 f
+  or_o (out)                               0.00       0.48 f
+  data arrival time                                   0.48
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: a_i (input port)
+  Endpoint: or_o (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  a_i (in)                                 0.00       0.00 r
+  U11/Y (INVXLTS)                          0.04       0.04 f
+  U12/Y (INVXLTS)                          0.14       0.18 r
+  U16/Y (NOR2XLTS)                         0.11       0.29 f
+  U15/Y (NOR2XLTS)                         0.17       0.46 r
+  or_o (out)                               0.00       0.46 r
+  data arrival time                                   0.46
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: prechrg_i (input port)
+  Endpoint: nor_o (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  prechrg_i (in)                           0.00       0.00 r
+  U9/Y (INVXLTS)                           0.04       0.04 f
+  U10/Y (INVXLTS)                          0.14       0.18 r
+  U14/Y (OR2XLTS)                          0.20       0.38 r
+  U13/Y (NOR2XLTS)                         0.08       0.46 f
+  nor_o (out)                              0.00       0.46 f
+  data arrival time                                   0.46
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: b_i (input port)
+  Endpoint: or_o (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  b_i (in)                                 0.00       0.00 r
+  U7/Y (INVXLTS)                           0.04       0.04 f
+  U8/Y (INVXLTS)                           0.13       0.17 r
+  U16/Y (NOR2XLTS)                         0.11       0.28 f
+  U15/Y (NOR2XLTS)                         0.17       0.45 r
+  or_o (out)                               0.00       0.45 r
+  data arrival time                                   0.45
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: b_i (input port)
+  Endpoint: nor_o (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  b_i (in)                                 0.00       0.00 r
+  U7/Y (INVXLTS)                           0.04       0.04 f
+  U8/Y (INVXLTS)                           0.13       0.17 r
+  U14/Y (OR2XLTS)                          0.20       0.37 r
+  U13/Y (NOR2XLTS)                         0.08       0.45 f
+  nor_o (out)                              0.00       0.45 f
+  data arrival time                                   0.45
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: a_i (input port)
+  Endpoint: nor_o (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  a_i (in)                                 0.00       0.00 f
+  U11/Y (INVXLTS)                          0.08       0.08 r
+  U12/Y (INVXLTS)                          0.10       0.18 f
+  U13/Y (NOR2XLTS)                         0.16       0.34 r
+  nor_o (out)                              0.00       0.34 r
+  data arrival time                                   0.34
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: prechrg_i (input port)
+  Endpoint: or_o (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  prechrg_i (in)                           0.00       0.00 f
+  U9/Y (INVXLTS)                           0.08       0.08 r
+  U10/Y (INVXLTS)                          0.10       0.18 f
+  U15/Y (NOR2XLTS)                         0.16       0.34 r
+  or_o (out)                               0.00       0.34 r
+  data arrival time                                   0.34
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: a_i (input port)
+  Endpoint: nor_o (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  a_i (in)                                 0.00       0.00 r
+  U11/Y (INVXLTS)                          0.04       0.04 f
+  U12/Y (INVXLTS)                          0.14       0.18 r
+  U13/Y (NOR2XLTS)                         0.10       0.29 f
+  nor_o (out)                              0.00       0.29 f
+  data arrival time                                   0.29
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: prechrg_i (input port)
+  Endpoint: or_o (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  prechrg_i (in)                           0.00       0.00 r
+  U9/Y (INVXLTS)                           0.04       0.04 f
+  U10/Y (INVXLTS)                          0.14       0.18 r
+  U15/Y (NOR2XLTS)                         0.10       0.28 f
+  or_o (out)                               0.00       0.28 f
+  data arrival time                                   0.28
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

@@ -1,0 +1,105 @@
+(DELAYFILE
+(SDFVERSION "OVI 2.1")
+(DESIGN "wddl_dflipflop")
+(DATE "Mon Feb 18 20:37:37 2013")
+(VENDOR "scx3_cmos8rf_lpvt_tt_1p2v_25c")
+(PROGRAM "Synopsys Design Compiler cmos")
+(VERSION "A-2007.12-SP4")
+(DIVIDER /)
+(VOLTAGE 1.20:1.20:1.20)
+(PROCESS "tt_1p2v_25c")
+(TEMPERATURE 25.00:25.00:25.00)
+(TIMESCALE 1ns)
+(CELL
+  (CELLTYPE "wddl_dflipflop")
+  (INSTANCE)
+  (DELAY
+    (ABSOLUTE
+    (INTERCONNECT prechrg_i U6/A (0.000:0.000:0.000))
+    (INTERCONNECT d_i U5/A (0.000:0.000:0.000))
+    (INTERCONNECT U5/Y U4/A (0.000:0.000:0.000))
+    (INTERCONNECT U6/Y U3/AN (0.000:0.000:0.000))
+    (INTERCONNECT U4/Y U3/B (0.000:0.000:0.000))
+    (INTERCONNECT U4/Y flop1\/q_reg/D (0.000:0.000:0.000))
+    (INTERCONNECT U6/Y flop1\/q_reg/RN (0.000:0.000:0.000))
+    (INTERCONNECT clk flop1\/q_reg/CK (0.000:0.000:0.000))
+    (INTERCONNECT U3/Y flop2\/q_reg/D (0.000:0.000:0.000))
+    (INTERCONNECT clk flop2\/q_reg/CK (0.000:0.000:0.000))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVXLTS")
+  (INSTANCE U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.104:0.104:0.104) (0.052:0.052:0.052))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVXLTS")
+  (INSTANCE U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.095:0.095:0.095) (0.047:0.047:0.047))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "INVX1TS")
+  (INSTANCE U4)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.093:0.093:0.093) (0.098:0.098:0.098))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "NOR2BX1TS")
+  (INSTANCE U3)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH AN Y (0.214:0.214:0.214) (0.252:0.252:0.252))
+    (IOPATH B Y (0.124:0.124:0.124) (0.075:0.075:0.075))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "DFFTRX2TS")
+  (INSTANCE flop1\/q_reg)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge CK) Q (1.089:1.089:1.089) (1.249:1.249:1.249))
+    (IOPATH (posedge CK) QN (1.408:1.408:1.408) (1.328:1.328:1.328))
+    )
+  )
+  (TIMINGCHECK
+    (PERIOD CK (1.000:1.000:1.000))
+    (SETUP (posedge D) (posedge CK) (-0.075:-0.075:-0.075))
+    (SETUP (negedge D) (posedge CK) (-0.263:-0.263:-0.263))
+    (HOLD (posedge D) (posedge CK) (0.143:0.143:0.143))
+    (HOLD (negedge D) (posedge CK) (0.474:0.474:0.474))
+    (SETUP (posedge RN) (posedge CK) (-0.061:-0.061:-0.061))
+    (SETUP (negedge RN) (posedge CK) (-0.247:-0.247:-0.247))
+    (HOLD (posedge RN) (posedge CK) (0.120:0.120:0.120))
+    (HOLD (negedge RN) (posedge CK) (0.469:0.469:0.469))
+  )
+)
+(CELL
+  (CELLTYPE "DFFQX1TS")
+  (INSTANCE flop2\/q_reg)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH (posedge CK) Q (1.104:1.104:1.104) (1.235:1.235:1.235))
+    )
+  )
+  (TIMINGCHECK
+    (PERIOD CK (1.000:1.000:1.000))
+    (SETUP (posedge D) (posedge CK) (-0.280:-0.280:-0.280))
+    (SETUP (negedge D) (posedge CK) (-0.321:-0.310:-0.310))
+    (HOLD (posedge D) (posedge CK) (0.286:0.286:0.286))
+    (HOLD (negedge D) (posedge CK) (0.537:0.517:0.517))
+  )
+)
+)

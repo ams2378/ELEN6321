@@ -1,0 +1,1 @@
+dc_shell -f or.tcl | tee proj.log

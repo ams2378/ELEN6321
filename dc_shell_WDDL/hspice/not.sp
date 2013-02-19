@@ -1,0 +1,9 @@
+.TEMP 25
+.OPTION
++    ARTIST=2
++    INGOLD=2
++    PARHIER=LOCAL
++    PSF=2
+
+xu4 n6 n7 INVX1TS
+.END
