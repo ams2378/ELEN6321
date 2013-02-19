@@ -351,8 +351,8 @@ GoldenModel Done : 1
 Result from GoldenModel : 078d01848d748833a408fcf7b947072e 
 Result from DUT : 078d01848d748833a408fcf7b947072e 
 
-
-------------- Simulation Time -----------------               175000
+                                                                                  
+------------- Simulation Time -----------------               175000        *******1st Encryption START FROM HERE ********
 Inputs :
 -----------------
 rst : 1
@@ -703,7 +703,7 @@ Result from GoldenModel : c8b01e6387f4df05f201835e60c00db9
 Result from DUT : 33dcce5db1a2a1d01d6eddbfde287f2d 
 
 
-------------- Simulation Time -----------------               305000
+------------- Simulation Time -----------------               305000        ******* END of 1st ENCRYPTION ******
 Inputs :
 -----------------
 rst : 1
