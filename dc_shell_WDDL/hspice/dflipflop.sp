@@ -5,5 +5,5 @@
 +    PARHIER=LOCAL
 +    PSF=2
 
-xu8 clk d_bar_o qbar_o DFFQX1TS
+xu8 clk d_bar_o qbar_o gnd vdd DFFQX1TS
 .END
