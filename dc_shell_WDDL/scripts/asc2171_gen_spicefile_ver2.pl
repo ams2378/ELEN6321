@@ -2,13 +2,13 @@
 use strict;
 use warnings;
 
-
+my $filename="wddl_dflipflop";
 # Please enter name of input file to parse data 
-my $inputfile = "/home/amandeep/Downloads/lfsr1.nl.v";
-my $norminputfile="/home/amandeep/ELEN6321/dc_shell_WDDL/spice_generated/normlfsr1.nl.v";
-my $outFilename="/home/amandeep/ELEN6321/dc_shell_WDDL/spice_generated/netlist_out.sp";
+my $inputfile = "/home/amandeep/ELEN6321/dc_shell_WDDL/netlist/$filename.nl.v";
+my $norminputfile="/home/amandeep/ELEN6321/dc_shell_WDDL/spice_generated/inter/norml_$filename.nl.v";
+my $outFilename="/home/amandeep/ELEN6321/dc_shell_WDDL/spice_generated/netlist_out_$filename.sp";
 my $netlistv="/home/amandeep/subckt_library/ibm13rflpvt_custom[modified].sp";
-
+my $charmatch="wire";
 
 open my $infile, $inputfile or die "Could not open $inputfile: $!";
 open my $netlfile, $netlistv or die "Could not open $netlistv: $!";
@@ -102,7 +102,7 @@ while( my $inputnetline = <$infile>)
 		for ($i=0;$i<$varTestSize;$i++)
 		{
 			printf "$varTest[$i] " ;
-			if($varTest[$i] eq "wire")
+			if($varTest[$i] eq $charmatch)
 			{
 				$wireline=1;
 			}	
@@ -224,7 +224,7 @@ while( my $inputnormline = <$norminfile>)
 	my $matchfound;
 	$arbitnode=0;
 	#printf $libvarcount[$indexsearch];	
-	for($i=0;$i<$libvarcount[$indexsearch];$i++)
+	for($i=0;$i<$k;$i++)
 	{	
 		printf " ";
 		printf $out " ";
@@ -250,8 +250,8 @@ while( my $inputnormline = <$norminfile>)
 		}
 		
 	}
-	#printf " gnd vdd ";
-	#printf $out " gnd vdd ";
+	printf " gnd vdd";
+	printf $out " gnd vdd";
 	printf " $modulename[$sizeNets]";
 	printf $out " $modulename[$sizeNets]";	
 	printf "\n"; 
