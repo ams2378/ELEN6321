@@ -1,0 +1,6 @@
+$DATA1 SOURCE='HSPICE' VERSION='A-2007.09'
+.TITLE ' '
+ start            end              fo4delay         eop               
+ temper           alter#            
+    failed           failed           failed           failed         
+   25.0000           1.0000         
