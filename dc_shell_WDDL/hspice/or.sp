@@ -6,5 +6,5 @@
 +    PSF=2
 
 
-xu8 n12 n10 n16 OR2XLTS
+xu8 n12 n10 n16 gnd vdd OR2XLTS
 .END
