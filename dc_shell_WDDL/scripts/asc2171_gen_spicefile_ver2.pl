@@ -2,7 +2,10 @@
 use strict;
 use warnings;
 
-my $filename="wddl_dflipflop";
+# Author: Amandeep Chhabra
+# 
+#
+my $filename="wddlor";
 # Please enter name of input file to parse data 
 my $inputfile = "/home/amandeep/ELEN6321/dc_shell_WDDL/netlist/$filename.nl.v";
 my $norminputfile="/home/amandeep/ELEN6321/dc_shell_WDDL/spice_generated/inter/norml_$filename.nl.v";
@@ -224,7 +227,7 @@ while( my $inputnormline = <$norminfile>)
 	my $matchfound;
 	$arbitnode=0;
 	#printf $libvarcount[$indexsearch];	
-	for($i=0;$i<$k;$i++)
+	for($i=0;$i<$libvarcount[$indexsearch];$i++)
 	{	
 		printf " ";
 		printf $out " ";
