@@ -1,0 +1,28 @@
+* "simulator" "HSPICE" 
+* "version" "A-2007.09"
+* "format" "HSP"
+* "rundate" "15:13:47 02/23/2013 "
+* "netlist" "wddland_sim.sp "
+* "runtitle" "*include model and subckts"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000f       
+.nodeset
++ a_i =  10.0000m       
++ and_o =   1.3163n       
++ b_i =  10.0000m       
++ n5 =   1.4778n       
++ n6 =   1.7623n       
++ nand_o =   1.2000        
++ prechrg_i =  10.0000m       
++ vdd =   1.2000        
++ x1nor2xlts.hnet7 =   1.2000        
++ x2and2xlts.hnet14 =  57.4682m       
++ x2and2xlts.net11 =   1.2000        
++ x3and2xlts.hnet14 =  63.2018m       
++ x3and2xlts.net11 =   1.2000        
++ x4nor2bx1ts.hnet12 =   1.2000        
++ x4nor2bx1ts.nmin1 =   1.2000        
+***   END: Saved Operating Point ***                     

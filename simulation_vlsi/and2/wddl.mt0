@@ -1,0 +1,4 @@
+$DATA1 SOURCE='HSPICE' VERSION='A-2007.09'
+.TITLE '*include model and subckts'
+ avg_pow          temper           alter#            
+  2.947e-08         25.0000           1.0000         

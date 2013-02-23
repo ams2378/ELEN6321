@@ -1,0 +1,6 @@
+.MEASURE avg_pow AVG power FROM=1u TO=10u
+
+
+.measure start when V(a_i)='0.5*supply0' rise=1 TD='2*SD'
+.measure end when V(out)='0.5*supply0' rise=1 TD='2*SD'
+.measure eop integ PAR('-supply0*I(vvdd)') from start to end
