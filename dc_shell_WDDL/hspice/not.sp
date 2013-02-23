@@ -5,5 +5,5 @@
 +    PARHIER=LOCAL
 +    PSF=2
 
-xu4 n6 n7 INVX1TS
+xu4 n6 n7 gnd vdd INVX1TS
 .END

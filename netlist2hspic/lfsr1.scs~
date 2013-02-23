@@ -1,0 +1,105 @@
+** Generated for: hspiceD
+** Generated on: Feb 15 11:44:07 2013
+** Design library name: LFSR
+** Design cell name: lfsr1
+** Design view name: schematic
+
+
+.TEMP 25
+.OPTION
++    ARTIST=2
++    INGOLD=2
++    PARHIER=LOCAL
++    PSF=2
+
+** Library name: STD_cell_symbol
+** Cell name: CLKBUFX2TS
+** View name: cmos_sch
+**.subckt CLKBUFX2TS a y
+**.ends CLKBUFX2TS
+** End of subcircuit definition.
+
+** Library name: STD_cell_symbol
+** Cell name: INVXLTS
+** View name: cmos_sch
+**.subckt INVXLTS a y
+**.ends INVXLTS
+** End of subcircuit definition.
+
+** Library name: STD_cell_symbol
+** Cell name: gnd vdd DFFSXLTS
+** View name: cmos_sch
+**.subckt gnd vdd DFFSXLTS ck d q qn sn
+**.ends gnd vdd DFFSXLTS
+** End of subcircuit definition.
+
+** Library name: STD_cell_symbol
+** Cell name: DFFRX1TS
+** View name: cmos_sch
+**.subckt DFFRX1TS ck d q qn rn
+**.ends DFFRX1TS
+** End of subcircuit definition.
+
+** Library name: STD_cell_symbol
+** Cell name: XNOR2X1TS
+** View name: cmos_sch
+**.subckt XNOR2X1TS a b y
+**.ends XNOR2X1TS
+** End of subcircuit definition.
+
+** Library name: STD_cell_symbol
+** Cell name: XOR2X1TS
+** View name: cmos_sch
+**.subckt XOR2X1TS a b y
+**.ends XOR2X1TS
+** End of subcircuit definition.
+
+
+
+** Library name: LFSR
+** Cell name: lfsr1
+** View name: schematic
+xu13 n39 n34 gnd vdd CLKBUFX2TS
+xu9 n39 n36 gnd vdd CLKBUFX2TS
+xu8 n32 n35 gnd vdd CLKBUFX2TS
+xu14 n40 n39 gnd vdd CLKBUFX2TS
+xu15 n32 n40 gnd vdd CLKBUFX2TS
+xu10 n38 n37 gnd vdd CLKBUFX2TS
+xu11 n41 n38 gnd vdd CLKBUFX2TS
+xu12 n32 n41 gnd vdd CLKBUFX2TS
+xu7 n31 n32 gnd vdd INVXLTS
+xu6 resetn n31 gnd vdd INVXLTS
+
+xlfsr_out_reg__1__ clk n28 n27 lfsr_out<1> n34 gnd vdd DFFSXLTS
+xlfsr_out_reg__2__ clk n27 n26 lfsr_out<2> n36 gnd vdd DFFSXLTS
+xlfsr_out_reg__3__ clk n26 n25 lfsr_out<3> n34 gnd vdd DFFSXLTS
+xlfsr_out_reg__5__ clk n24 n23 lfsr_out<5> n35 gnd vdd DFFSXLTS
+xlfsr_out_reg__6__ clk n23 n22 lfsr_out<6> n35 gnd vdd DFFSXLTS
+xlfsr_out_reg__7__ clk n22 n21 lfsr_out<7> n35 gnd vdd DFFSXLTS
+xlfsr_out_reg__4__ clk n25 n24 lfsr_out<4> n34 gnd vdd DFFSXLTS
+xlfsr_out_reg__9__ clk n20 n19 lfsr_out<9> n32 gnd vdd DFFSXLTS
+xlfsr_out_reg__10__ clk n19 n18 lfsr_out<10> n38 gnd vdd DFFSXLTS
+xlfsr_out_reg__11__ clk n18 n17 lfsr_out<11> n38 gnd vdd DFFSXLTS
+xlfsr_out_reg__8__ clk n21 n20 lfsr_out<8> n35 gnd vdd DFFSXLTS
+xlfsr_out_reg__13__ clk n16 n15 lfsr_out<13> n36 gnd vdd DFFSXLTS
+xlfsr_out_reg__14__ clk n15 n14 lfsr_out<14> n36 gnd vdd DFFSXLTS
+xlfsr_out_reg__15__ clk n14 n13 lfsr_out<15> n36 gnd vdd DFFSXLTS
+xlfsr_out_reg__12__ clk n17 n16 lfsr_out<12> n39 gnd vdd DFFSXLTS
+xlfsr_out_reg__17__ clk n12 n11 lfsr_out<17> n39 gnd vdd DFFSXLTS
+xlfsr_out_reg__18__ clk n11 n10 lfsr_out<18> n40 gnd vdd DFFSXLTS
+xlfsr_out_reg__19__ clk n10 n9 lfsr_out<19> n40 gnd vdd DFFSXLTS
+xlfsr_out_reg__16__ clk n13 n12 lfsr_out<16> n40 gnd vdd DFFSXLTS
+xlfsr_out_reg__21__ clk n8 n7 lfsr_out<21> n37 gnd vdd DFFSXLTS
+xlfsr_out_reg__22__ clk n7 n6 lfsr_out<22> n37 gnd vdd DFFSXLTS
+xlfsr_out_reg__23__ clk n6 n5 lfsr_out<23> n37 gnd vdd DFFSXLTS
+xlfsr_out_reg__20__ clk n9 n8 lfsr_out<20> n37 gnd vdd DFFSXLTS
+xlfsr_out_reg__25__ clk n4 n3 lfsr_out<25> n41 gnd vdd DFFSXLTS
+xlfsr_out_reg__26__ clk n3 n2 lfsr_out<26> n41 gnd vdd DFFSXLTS
+xlfsr_out_reg__27__ clk n2 nett_174 lfsr_out<27> n41 gnd vdd DFFSXLTS
+xlfsr_out_reg__24__ clk n5 n4 lfsr_out<24> n38 gnd vdd DFFSXLTS
+xlfsr_out_reg__0__ clk n1 lfsr_out<0> n28 n34 gnd vdd DFFSXLTS
+
+xu5 lfsr_out<23> lfsr_out<16> n30 gnd vdd XNOR2X1TS
+xu3 lfsr_out<27> n29 n1 gnd vdd XOR2X1TS
+xu4 lfsr_out<0> n30 n29 gnd vdd XOR2X1TS
+.END
