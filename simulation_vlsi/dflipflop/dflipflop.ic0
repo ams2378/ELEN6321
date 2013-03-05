@@ -1,0 +1,33 @@
+* "simulator" "HSPICE" 
+* "version" "A-2007.09"
+* "format" "HSP"
+* "rundate" "16:13:00 02/23/2013 "
+* "netlist" "dflipflop.sp "
+* "runtitle" "*include model and subckts"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000f       
+.nodeset
++ clk =  10.0000m       
++ d =  10.0000m       
++ nett_0 =   1.2000        
++ q =   1.6263n       
++ reset =   1.2000        
++ vdd =   1.2000        
++ x1dfftrx2ts.c =   1.2857n       
++ x1dfftrx2ts.cn =   1.2000        
++ x1dfftrx2ts.hnet23 =   1.2000        
++ x1dfftrx2ts.hnet27 =  56.3454m       
++ x1dfftrx2ts.hnet28 = 964.5345m       
++ x1dfftrx2ts.hnet33 =   3.1778n       
++ x1dfftrx2ts.m =   1.2246n       
++ x1dfftrx2ts.net64 =   1.2000        
++ x1dfftrx2ts.net67 = 199.2102m       
++ x1dfftrx2ts.net80 =   2.6944n       
++ x1dfftrx2ts.net83 =   4.1020n       
++ x1dfftrx2ts.net84 =   1.7549n       
++ x1dfftrx2ts.pm =   1.2000        
++ x1dfftrx2ts.s =   1.2000        
+***   END: Saved Operating Point ***                     

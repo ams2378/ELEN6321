@@ -1,0 +1,19 @@
+* "simulator" "HSPICE" 
+* "version" "A-2007.09"
+* "format" "HSP"
+* "rundate" "16:04:35 02/23/2013 "
+* "netlist" "or.sp "
+* "runtitle" "*include model and subckts"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000f       
+.nodeset
++ a_i =  10.0000m       
++ b_i =  10.0000m       
++ out =   1.3163n       
++ vdd =   1.2000        
++ x1or2xlts.hnet12 =   1.2000        
++ x1or2xlts.nmin =   1.2000        
+***   END: Saved Operating Point ***                     
