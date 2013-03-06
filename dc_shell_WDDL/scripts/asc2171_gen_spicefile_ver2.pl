@@ -5,7 +5,7 @@ use warnings;
 # Author: Amandeep Chhabra
 # 
 #
-my $filename="xorgate";
+my $filename="aes_sbox";
 # Please enter name of input file to parse data 
 my $inputfile = "/home/amandeep/ELEN6321/dc_shell_WDDL/netlist/$filename.nl.v";
 my $norminputfile="/home/amandeep/ELEN6321/dc_shell_WDDL/spice_generated/inter/norml_$filename.nl.v";
