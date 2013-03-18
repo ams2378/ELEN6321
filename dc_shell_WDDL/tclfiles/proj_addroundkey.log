@@ -1,0 +1,480 @@
+
+                        DC Professional (TM)
+                           DC Expert (TM)
+                            DC Ultra (TM)
+                       FloorPlan Manager (TM)
+                          HDL Compiler (TM)
+                         VHDL Compiler (TM)
+                        Library Compiler (TM)
+                      DesignWare Developer (TM)
+                          DFT Compiler (TM)
+                            BSD Compiler
+                         Power Compiler (TM)
+
+           Version A-2007.12-SP4 for linux -- May 31, 2008
+              Copyright (c) 1988-2008 by Synopsys, Inc.
+                         ALL RIGHTS RESERVED
+
+This software and the associated documentation are confidential and 
+proprietary to Synopsys, Inc. Your use or disclosure of this software 
+is subject to the terms and conditions of a written license agreement 
+between you, or your company, and Synopsys, Inc.
+
+The above trademark notice does not imply that you are licensed to use 
+all of the listed products. You are licensed to use only those products 
+for which you have lawfully obtained a valid license key.
+
+Initializing...
+#########################################
+# TCL script for Design Compiler        #
+# 2012 Mingoo Seok                      #
+#########################################
+#########################################
+# READ Design and Library               #
+#########################################
+set BEHAVIORROOT "./rtl/aes_core/rtl/"
+./rtl/aes_core/rtl/
+#set top_level
+set top_level aes_addroundkey
+aes_addroundkey
+source -verbose "common.tcl"
+. /tools4/syn2007.12/libraries/syn/
+dw_foundation.sldb
+* /tools2/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db dw_foundation.sldb
+/tools2/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db
+/tools2/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db
+#read_verilog {./rtl/verilog/aes_cipher_top.v}
+#read_verilog {./rtl/verilog/aes_key_expand_.v}
+read_verilog {./rtl/aes_core/rtl/aes_addroundkey.v}
+Loading db file '/tools2/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db'
+Loading db file '/tools4/syn2007.12/libraries/syn/dw_foundation.sldb'
+Loading db file '/tools4/syn2007.12/libraries/syn/gtech.db'
+Loading db file '/tools4/syn2007.12/libraries/syn/standard.sldb'
+  Loading link library 'scx3_cmos8rf_lpvt_tt_1p2v_25c'
+  Loading link library 'gtech'
+Loading verilog file '/home/user2/spring13/ams2378/ELEN6321/dc_shell_WDDL/tclfiles/rtl/aes_core/rtl/aes_addroundkey.v'
+Detecting input file type automatically (-rtl or -netlist).
+Running DC verilog reader
+Performing 'read' command.
+Compiling source file /home/user2/spring13/ams2378/ELEN6321/dc_shell_WDDL/tclfiles/rtl/aes_core/rtl/aes_addroundkey.v
+Reading with netlist reader (equivalent to -netlist option).
+Verilog netlist reader completed successfully.
+Current design is now '/home/user2/spring13/ams2378/ELEN6321/dc_shell_WDDL/tclfiles/rtl/aes_core/rtl/aes_addroundkey.db:aes_addroundkey'
+Loaded 1 design.
+Current design is 'aes_addroundkey'.
+aes_addroundkey
+read_verilog {./rtl/aes_core/rtl/aes_xor.v}
+Loading verilog file '/home/user2/spring13/ams2378/ELEN6321/dc_shell_WDDL/tclfiles/rtl/aes_core/rtl/aes_xor.v'
+Detecting input file type automatically (-rtl or -netlist).
+Running DC verilog reader
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/user2/spring13/ams2378/ELEN6321/dc_shell_WDDL/tclfiles/rtl/aes_core/rtl/aes_xor.v
+Warning:  /home/user2/spring13/ams2378/ELEN6321/dc_shell_WDDL/tclfiles/rtl/aes_core/rtl/aes_xor.v:24: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+
+Inferred memory devices in process
+	in routine aes_xor line 23 in file
+		'/home/user2/spring13/ams2378/ELEN6321/dc_shell_WDDL/tclfiles/rtl/aes_core/rtl/aes_xor.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      sa_o_reg       | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Current design is now '/home/user2/spring13/ams2378/ELEN6321/dc_shell_WDDL/tclfiles/rtl/aes_core/rtl/aes_xor.db:aes_xor'
+Loaded 1 design.
+Current design is 'aes_xor'.
+aes_xor
+#read_verilog {./rtl/verilog/aes_rcon.vcd }
+list_designs
+aes_addroundkey aes_xor (*)
+1
+#########################################
+# Design Constranits                    #
+#########################################
+current_design $top_level
+Current design is 'aes_addroundkey'.
+{aes_addroundkey}
+link
+
+  Linking design 'aes_addroundkey'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (2 designs)               /home/user2/spring13/ams2378/ELEN6321/dc_shell_WDDL/tclfiles/rtl/aes_core/rtl/aes_addroundkey.db, etc
+  scx3_cmos8rf_lpvt_tt_1p2v_25c (library) /tools2/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db
+  dw_foundation.sldb (library) /tools4/syn2007.12/libraries/syn/dw_foundation.sldb
+
+1
+source -verbose "timing.tcl"
+12
+0
+1.5
+0
+3
+0.001
+1
+1
+1
+1
+1
+1
+1
+1
+1
+#set_driving_cell -lib_cell HS65_GS_IVX2 [all_inputs]
+## Do not use cell in synthesis
+set_dont_use [get_lib_cells scx3_cmos8rf_lpvt_tt_1p2v_25c/AO*]
+1
+set_dont_use [get_lib_cells scx3_cmos8rf_lpvt_tt_1p2v_25c/OA*]
+1
+set_dont_use [get_lib_cells scx3_cmos8rf_lpvt_tt_1p2v_25c/*AND3*]
+1
+set_dont_use [get_lib_cells scx3_cmos8rf_lpvt_tt_1p2v_25c/*AND4*]
+1
+set_dont_use [get_lib_cells scx3_cmos8rf_lpvt_tt_1p2v_25c/*NOR3*]
+1
+set_dont_use [get_lib_cells scx3_cmos8rf_lpvt_tt_1p2v_25c/*NOR4*]
+1
+set_dont_use [get_lib_cells scx3_cmos8rf_lpvt_tt_1p2v_25c/*OR3*]
+1
+set_dont_use [get_lib_cells scx3_cmos8rf_lpvt_tt_1p2v_25c/*OR4*]
+1
+set_dont_use [get_lib_cells scx3_cmos8rf_lpvt_tt_1p2v_25c/*NAND3*]
+1
+set_dont_use [get_lib_cells scx3_cmos8rf_lpvt_tt_1p2v_25c/*NAND4*]
+1
+set_max_capacitance 0.001 [all_inputs]
+1
+set_max_fanout 4 $top_level
+1
+set_max_fanout 2 [all_inputs]
+1
+set_max_area 0 
+1
+set_fix_multiple_port_nets -all -buffer_constants
+1
+#set_dont_use ST65GP_250/HS65_GS_IVX2
+#set_ideal_network {resetn}
+#set_ideal_network {addr_in}
+#set_ideal_network {temp} -no_propagate
+#set_ideal_network {data_out} -no_propagate
+#set_multicycle_path 2 -from {temp1} -to {out1}
+#set_multicycle_path 2 -from {temp2} -to {out2}
+#########################################
+# Compile for combinational logic       #
+#########################################
+check_design
+Information: Design 'aes_addroundkey' has multiply instantiated designs. Use the '-multiple_designs' switch for more information. (LINT-78)
+1
+#uniquify
+#compile_ultra
+set_ultra_optimization -f
+Warning: The 'set_ultra_optimization' command will be obsolete in the next release of Design Compiler (2008.09). Please change your scripts to use the 'compile_ultra' command for getting the most optimized results with DC Ultra. For further information: 'man compile_ultra'
+Information: DC ultra optimization mode successfully set. (UIO-73)
+1
+compile -boundary_optimization -map_effort low
+Warning: The compile -map_effort low is obsolete. Setting this variable now defaults to compile -map_effort medium. Please update your script accordingly. (OPT-1303)
+Analyzing: "/tools2/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db"
+Library analysis succeeded.
+Information: Datapath optimization is enabled. (DP-1)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library       |      Version       | Available |
+============================================================================
+| Basic DW Building Blocks                | A-2007.12-DWBB_0803 |    *     |
+| Licensed DW Building Blocks             | A-2007.12-DWBB_0803 |          |
+============================================================================
+
+
+Loaded alib file './alib-52/scx3_cmos8rf_lpvt_tt_1p2v_25c.db.alib'
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'aes_xor_0'
+  Processing 'aes_addroundkey'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Mapping Optimizations  (Ultra Medium effort)
+  -------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:04   12520.8      0.00       0.0       2.7                          
+    0:00:04   12520.8      0.00       0.0       2.7                          
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:04   12520.8      0.00       0.0       2.7                          
+    0:00:04   12520.8      0.00       0.0       2.7                          
+    0:00:04   12520.8      0.00       0.0       2.7                          
+    0:00:04   12520.8      0.00       0.0       2.7                          
+    0:00:04   12520.8      0.00       0.0       2.7                          
+    0:00:05    9571.7      0.00       0.0       2.3                          
+
+
+  Beginning Design Rule Fixing  (max_capacitance)
+  ----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:05    9571.7      0.00       0.0       2.3                          
+    0:00:06    9678.2      0.00       0.0       0.1 w2[26]                   
+    0:00:10    9764.6      0.00       0.0       0.1                          
+    0:00:10    9764.6      0.00       0.0       0.1                          
+
+
+  Beginning Area-Recovery Phase  (max_area 0)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:10    9764.6      0.00       0.0       0.1                          
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+    0:00:10    7992.0      0.00       0.0       0.1                          
+    0:00:10    7992.0      0.00       0.0       0.1                          
+    0:00:10    7992.0      0.00       0.0       0.1                          
+    0:00:10    7992.0      0.00       0.0       0.1                          
+Loading db file '/tools2/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db'
+
+  Optimization Complete
+  ---------------------
+1
+compile_ultra
+Alib files are up-to-date.
+Information: Datapath optimization is enabled. (DP-1)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library       |      Version       | Available |
+============================================================================
+| Basic DW Building Blocks                | A-2007.12-DWBB_0803 |    *     |
+| Licensed DW Building Blocks             | A-2007.12-DWBB_0803 |    *     |
+============================================================================
+
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: Ungrouping hierarchy ux33 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy ux00 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy ux10 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy ux20 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy ux30 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy ux01 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy ux11 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy ux21 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy ux31 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy ux02 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy ux12 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy ux22 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy ux32 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy ux03 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy ux13 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy ux23 before Pass 1 (OPT-776)
+Information: Ungrouping 16 of 17 hierarchies before Pass 1 (OPT-775)
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'aes_addroundkey'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: There is no timing violation in design aes_addroundkey. Delay-based auto_ungroup will not be performed. (OPT-780)
+  Re-synthesis Optimization (Phase 1)
+  Re-synthesis Optimization (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:02    5777.3      0.00       0.0       0.4                          
+    0:00:02    5777.3      0.00       0.0       0.4                          
+    0:00:02    5777.3      0.00       0.0       0.4                          
+    0:00:02    5777.3      0.00       0.0       0.4                          
+    0:00:02    5777.3      0.00       0.0       0.4                          
+    0:00:02    5777.3      0.00       0.0       0.4                          
+    0:00:02    5777.3      0.00       0.0       0.4                          
+
+
+  Beginning Design Rule Fixing  (max_capacitance)
+  ----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:02    5777.3      0.00       0.0       0.4                          
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+    0:00:05    7997.8      0.00       0.0       0.1                          
+    0:00:05    8041.0      0.00       0.0       0.1                          
+Loaded alib file './alib-52/scx3_cmos8rf_lpvt_tt_1p2v_25c.db.alib'
+    0:00:07    8041.0      0.00       0.0       0.1                          
+    0:00:07    8041.0      0.00       0.0       0.1                          
+
+
+  Beginning Area-Recovery Phase  (max_area 0)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:08    8041.0      0.00       0.0       0.1                          
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+    0:00:09    7992.0      0.00       0.0       0.1                          
+    0:00:09    7992.0      0.00       0.0       0.1                          
+    0:00:09    7992.0      0.00       0.0       0.1                          
+    0:00:09    7992.0      0.00       0.0       0.1                          
+Loading db file '/tools2/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db'
+
+  Optimization Complete
+  ---------------------
+1
+set maxpaths 20
+20
+set rpt_file "${top_level}.dc.rpt1"
+aes_addroundkey.dc.rpt1
+check_design > $rpt_file
+report_area  >> ${rpt_file}
+report_power -hier -analysis_effort medium >> ${rpt_file}
+report_design >> ${rpt_file}
+report_cell >> ${rpt_file}
+report_port -verbose >> ${rpt_file}
+report_compile_options >> ${rpt_file}
+report_constraint -all_violators -verbose >> ${rpt_file} 
+report_timing -path full -delay max -max_paths $maxpaths -nworst 100 >> ${rpt_file}
+check_design
+1
+#set_transform_for_retiming {temp_reg[6] temp_reg[5] temp_reg[4] temp_reg[3] temp_reg[2] temp_reg[1] temp_reg[0]} dont_retime
+#optimize_registers -clock clk -edge rise -justification_effort high 
+#balance_registers
+#source -verbose "../script/timing.1.2ns.tcl"
+#pipeline_design -stages 8 -clock_port_name $clk_name -check_design -verbose -print_critical_loop
+#set_max_capacitance 1 [all_inputs] 
+#compile_ultra -no_autoungroup -no_boundary_optimization
+#remove_clock -all
+#source -verbose "../script/timing.1us.tcl"
+#pipeline_design -stages 8 -clock_port_name $clk_name -check_design -verbose 
+#pipeline_design -stages 8 -clock_port_name $clk_name -async_reset reset -check_design -verbose 
+#pipeline_design -stages 8 -clock_port_name $clk_name -async_reset reset -check_design -verbose -minimum_period_only
+#########################################
+# Write outputs                         #
+#########################################
+# Rename modules, signals according to the naming rules, tool exchange
+#source -verbose "../script/namingrules.tcl"
+set verilogout_no_tri TRUE
+TRUE
+write -hierarchy -format verilog -output "${top_level}.nl.v"
+Writing verilog file '/home/user2/spring13/ams2378/ELEN6321/dc_shell_WDDL/tclfiles/aes_addroundkey.nl.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+1
+# Generate Standard Delay Format (SDF) file
+write_sdf -context verilog "${top_level}.temp.sdf"
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/user2/spring13/ams2378/ELEN6321/dc_shell_WDDL/tclfiles/aes_addroundkey.temp.sdf'. (WT-3)
+1
+# Generate report file
+set maxpaths 20
+20
+set rpt_file "${top_level}.dc.rpt"
+aes_addroundkey.dc.rpt
+check_design > $rpt_file
+report_area  >> ${rpt_file}
+report_power -hier -analysis_effort medium >> ${rpt_file}
+report_design >> ${rpt_file}
+report_cell >> ${rpt_file}
+report_port -verbose >> ${rpt_file}
+report_compile_options >> ${rpt_file}
+report_constraint -all_violators -verbose >> ${rpt_file}
+report_timing -path full -delay max -max_paths $maxpaths -nworst 100 >> ${rpt_file}
+quit
+Information: Defining new variable 'BEHAVIORROOT'. (CMD-041)
+Information: Defining new variable 'rpt_file'. (CMD-041)
+Information: Defining new variable 'typical_wire_load'. (CMD-041)
+Information: Defining new variable 'clk_name'. (CMD-041)
+Information: Defining new variable 'typical_output_delay'. (CMD-041)
+Information: Defining new variable 'clk_period'. (CMD-041)
+Information: Defining new variable 'top_level'. (CMD-041)
+Information: Defining new variable 'typical_input_delay'. (CMD-041)
+Information: Defining new variable 'clk_transition'. (CMD-041)
+Information: Defining new variable 'clk_uncertainty'. (CMD-041)
+Information: Defining new variable 'clk_port'. (CMD-041)
+Information: Defining new variable 'maxpaths'. (CMD-041)
+
+Thank you...
