@@ -32,11 +32,11 @@ Initializing...
 #########################################
 # READ Design and Library               #
 #########################################
-set BEHAVIORROOT "./rtl/aes_core/rtl/"
-./rtl/aes_core/rtl/
+set BEHAVIORROOT "./rtl/aes_core/"
+./rtl/aes_core/
 #set top_level
-set top_level aes_addroundkey
-aes_addroundkey
+set top_level aes_xor
+aes_xor
 source -verbose "common.tcl"
 . /tools4/syn2007.12/libraries/syn/
 dw_foundation.sldb
@@ -45,62 +45,51 @@ dw_foundation.sldb
 /tools2/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db
 #read_verilog {./rtl/verilog/aes_cipher_top.v}
 #read_verilog {./rtl/verilog/aes_key_expand_.v}
-read_verilog {./rtl/aes_core/rtl/aes_addroundkey.v}
+#read_verilog {./rtl/aes_core/rtl/aes_addroundkey.v}
+read_verilog {./rtl/aes_core/aes_xor.v}
 Loading db file '/tools2/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db'
 Loading db file '/tools4/syn2007.12/libraries/syn/dw_foundation.sldb'
 Loading db file '/tools4/syn2007.12/libraries/syn/gtech.db'
 Loading db file '/tools4/syn2007.12/libraries/syn/standard.sldb'
   Loading link library 'scx3_cmos8rf_lpvt_tt_1p2v_25c'
   Loading link library 'gtech'
-Loading verilog file '/home/user2/spring13/ams2378/ELEN6321/dc_shell_WDDL/tclfiles/rtl/aes_core/rtl/aes_addroundkey.v'
-Detecting input file type automatically (-rtl or -netlist).
-Running DC verilog reader
-Performing 'read' command.
-Compiling source file /home/user2/spring13/ams2378/ELEN6321/dc_shell_WDDL/tclfiles/rtl/aes_core/rtl/aes_addroundkey.v
-Reading with netlist reader (equivalent to -netlist option).
-Verilog netlist reader completed successfully.
-Current design is now '/home/user2/spring13/ams2378/ELEN6321/dc_shell_WDDL/tclfiles/rtl/aes_core/rtl/aes_addroundkey.db:aes_addroundkey'
-Loaded 1 design.
-Current design is 'aes_addroundkey'.
-aes_addroundkey
-read_verilog {./rtl/aes_core/rtl/aes_xor.v}
-Loading verilog file '/home/user2/spring13/ams2378/ELEN6321/dc_shell_WDDL/tclfiles/rtl/aes_core/rtl/aes_xor.v'
+Loading verilog file '/home/user2/spring13/asc2171/avlsi/project/ELEN6321/dc_shell_WDDL/tclfiles/rtl/aes_core/aes_xor.v'
 Detecting input file type automatically (-rtl or -netlist).
 Running DC verilog reader
 Reading with Presto HDL Compiler (equivalent to -rtl option).
 Running PRESTO HDLC
-Compiling source file /home/user2/spring13/ams2378/ELEN6321/dc_shell_WDDL/tclfiles/rtl/aes_core/rtl/aes_xor.v
-Warning:  /home/user2/spring13/ams2378/ELEN6321/dc_shell_WDDL/tclfiles/rtl/aes_core/rtl/aes_xor.v:24: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
+Compiling source file /home/user2/spring13/asc2171/avlsi/project/ELEN6321/dc_shell_WDDL/tclfiles/rtl/aes_core/aes_xor.v
+Warning:  /home/user2/spring13/asc2171/avlsi/project/ELEN6321/dc_shell_WDDL/tclfiles/rtl/aes_core/aes_xor.v:24: Intraassignment delays for nonblocking assignments are ignored. (VER-130)
 
 Inferred memory devices in process
 	in routine aes_xor line 23 in file
-		'/home/user2/spring13/ams2378/ELEN6321/dc_shell_WDDL/tclfiles/rtl/aes_core/rtl/aes_xor.v'.
+		'/home/user2/spring13/asc2171/avlsi/project/ELEN6321/dc_shell_WDDL/tclfiles/rtl/aes_core/aes_xor.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
 |      sa_o_reg       | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
 ===============================================================================
 Presto compilation completed successfully.
-Current design is now '/home/user2/spring13/ams2378/ELEN6321/dc_shell_WDDL/tclfiles/rtl/aes_core/rtl/aes_xor.db:aes_xor'
+Current design is now '/home/user2/spring13/asc2171/avlsi/project/ELEN6321/dc_shell_WDDL/tclfiles/rtl/aes_core/aes_xor.db:aes_xor'
 Loaded 1 design.
 Current design is 'aes_xor'.
 aes_xor
 #read_verilog {./rtl/verilog/aes_rcon.vcd }
 list_designs
-aes_addroundkey aes_xor (*)
+aes_xor (*)
 1
 #########################################
 # Design Constranits                    #
 #########################################
 current_design $top_level
-Current design is 'aes_addroundkey'.
-{aes_addroundkey}
+Current design is 'aes_xor'.
+{aes_xor}
 link
 
-  Linking design 'aes_addroundkey'
+  Linking design 'aes_xor'
   Using the following designs and libraries:
   --------------------------------------------------------------------------
-  * (2 designs)               /home/user2/spring13/ams2378/ELEN6321/dc_shell_WDDL/tclfiles/rtl/aes_core/rtl/aes_addroundkey.db, etc
+  aes_xor                     /home/user2/spring13/asc2171/avlsi/project/ELEN6321/dc_shell_WDDL/tclfiles/rtl/aes_core/aes_xor.db
   scx3_cmos8rf_lpvt_tt_1p2v_25c (library) /tools2/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db
   dw_foundation.sldb (library) /tools4/syn2007.12/libraries/syn/dw_foundation.sldb
 
@@ -151,7 +140,7 @@ set_max_fanout 2 [all_inputs]
 1
 set_max_area 0 
 1
-set_fix_multiple_port_nets -all -buffer_constants
+set_fix_multiple_port_nets -all -buffer_constants -feedthroughs
 1
 #set_dont_use ST65GP_250/HS65_GS_IVX2
 #set_ideal_network {resetn}
@@ -164,7 +153,6 @@ set_fix_multiple_port_nets -all -buffer_constants
 # Compile for combinational logic       #
 #########################################
 check_design
-Information: Design 'aes_addroundkey' has multiply instantiated designs. Use the '-multiple_designs' switch for more information. (LINT-78)
 1
 #uniquify
 #compile_ultra
@@ -191,8 +179,7 @@ Loaded alib file './alib-52/scx3_cmos8rf_lpvt_tt_1p2v_25c.db.alib'
 
   Beginning Pass 1 Mapping
   ------------------------
-  Processing 'aes_xor_0'
-  Processing 'aes_addroundkey'
+  Processing 'aes_xor'
 
   Updating timing information
 Information: Updating design information... (UID-85)
@@ -200,36 +187,29 @@ Information: Updating design information... (UID-85)
   Beginning Mapping Optimizations  (Ultra Medium effort)
   -------------------------------
 
-   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
-    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
-  --------- --------- --------- --------- --------- -------------------------
-    0:00:04   12520.8      0.00       0.0       2.7                          
-    0:00:04   12520.8      0.00       0.0       2.7                          
-
   Beginning Delay Optimization Phase
   ----------------------------------
 
    ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
     TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:04   12520.8      0.00       0.0       2.7                          
-    0:00:04   12520.8      0.00       0.0       2.7                          
-    0:00:04   12520.8      0.00       0.0       2.7                          
-    0:00:04   12520.8      0.00       0.0       2.7                          
-    0:00:04   12520.8      0.00       0.0       2.7                          
-    0:00:05    9571.7      0.00       0.0       2.3                          
+    0:00:04     702.7      0.00       0.0       6.2                          
+    0:00:04     702.7      0.00       0.0       6.2                          
+    0:00:04     702.7      0.00       0.0       6.2                          
+    0:00:04     702.7      0.00       0.0       6.2                          
+    0:00:04     702.7      0.00       0.0       6.2                          
+    0:00:05     564.5      0.00       0.0       6.2                          
 
 
-  Beginning Design Rule Fixing  (max_capacitance)
+  Beginning Design Rule Fixing  (max_fanout)  (max_capacitance)
   ----------------------------
 
    ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
     TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:05    9571.7      0.00       0.0       2.3                          
-    0:00:06    9678.2      0.00       0.0       0.1 w2[26]                   
-    0:00:10    9764.6      0.00       0.0       0.1                          
-    0:00:10    9764.6      0.00       0.0       0.1                          
+    0:00:05     564.5      0.00       0.0       6.2                          
+    0:00:05     658.1      0.00       0.0       0.0                          
+    0:00:05     658.1      0.00       0.0       0.0                          
 
 
   Beginning Area-Recovery Phase  (max_area 0)
@@ -238,14 +218,12 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
     TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:10    9764.6      0.00       0.0       0.1                          
+    0:00:05     658.1      0.00       0.0       0.0                          
   Global Optimization (Phase 1)
   Global Optimization (Phase 2)
   Global Optimization (Phase 3)
   Global Optimization (Phase 4)
   Global Optimization (Phase 5)
-  Global Optimization (Phase 6)
-  Global Optimization (Phase 7)
   Global Optimization (Phase 1)
   Global Optimization (Phase 2)
   Global Optimization (Phase 3)
@@ -256,12 +234,10 @@ Information: Updating design information... (UID-85)
   Global Optimization (Phase 8)
   Global Optimization (Phase 9)
   Global Optimization (Phase 10)
-  Global Optimization (Phase 11)
-  Global Optimization (Phase 12)
-    0:00:10    7992.0      0.00       0.0       0.1                          
-    0:00:10    7992.0      0.00       0.0       0.1                          
-    0:00:10    7992.0      0.00       0.0       0.1                          
-    0:00:10    7992.0      0.00       0.0       0.1                          
+    0:00:05     612.0      0.00       0.0       0.0                          
+    0:00:05     612.0      0.00       0.0       0.0                          
+    0:00:05     612.0      0.00       0.0       0.0                          
+    0:00:05     612.0      0.00       0.0       0.0                          
 Loading db file '/tools2/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db'
 
   Optimization Complete
@@ -281,34 +257,18 @@ Information: Evaluating DesignWare library utilization. (UISN-27)
 
 Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
 
-Information: Ungrouping hierarchy ux33 before Pass 1 (OPT-776)
-Information: Ungrouping hierarchy ux00 before Pass 1 (OPT-776)
-Information: Ungrouping hierarchy ux10 before Pass 1 (OPT-776)
-Information: Ungrouping hierarchy ux20 before Pass 1 (OPT-776)
-Information: Ungrouping hierarchy ux30 before Pass 1 (OPT-776)
-Information: Ungrouping hierarchy ux01 before Pass 1 (OPT-776)
-Information: Ungrouping hierarchy ux11 before Pass 1 (OPT-776)
-Information: Ungrouping hierarchy ux21 before Pass 1 (OPT-776)
-Information: Ungrouping hierarchy ux31 before Pass 1 (OPT-776)
-Information: Ungrouping hierarchy ux02 before Pass 1 (OPT-776)
-Information: Ungrouping hierarchy ux12 before Pass 1 (OPT-776)
-Information: Ungrouping hierarchy ux22 before Pass 1 (OPT-776)
-Information: Ungrouping hierarchy ux32 before Pass 1 (OPT-776)
-Information: Ungrouping hierarchy ux03 before Pass 1 (OPT-776)
-Information: Ungrouping hierarchy ux13 before Pass 1 (OPT-776)
-Information: Ungrouping hierarchy ux23 before Pass 1 (OPT-776)
-Information: Ungrouping 16 of 17 hierarchies before Pass 1 (OPT-775)
+Information: Ungrouping 0 of 1 hierarchies before Pass 1 (OPT-775)
 
   Beginning Pass 1 Mapping
   ------------------------
-  Processing 'aes_addroundkey'
+  Processing 'aes_xor'
 
   Updating timing information
 Information: Updating design information... (UID-85)
 
   Beginning Mapping Optimizations  (Ultra High effort)
   -------------------------------
-Information: There is no timing violation in design aes_addroundkey. Delay-based auto_ungroup will not be performed. (OPT-780)
+Information: There is no timing violation in design aes_xor. Delay-based auto_ungroup will not be performed. (OPT-780)
   Re-synthesis Optimization (Phase 1)
   Re-synthesis Optimization (Phase 2)
   Global Optimization (Phase 1)
@@ -339,8 +299,6 @@ Information: There is no timing violation in design aes_addroundkey. Delay-based
   Global Optimization (Phase 26)
   Global Optimization (Phase 27)
   Global Optimization (Phase 28)
-  Global Optimization (Phase 29)
-  Global Optimization (Phase 30)
 
 
   Beginning Delay Optimization Phase
@@ -349,30 +307,36 @@ Information: There is no timing violation in design aes_addroundkey. Delay-based
    ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
     TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:02    5777.3      0.00       0.0       0.4                          
-    0:00:02    5777.3      0.00       0.0       0.4                          
-    0:00:02    5777.3      0.00       0.0       0.4                          
-    0:00:02    5777.3      0.00       0.0       0.4                          
-    0:00:02    5777.3      0.00       0.0       0.4                          
-    0:00:02    5777.3      0.00       0.0       0.4                          
-    0:00:02    5777.3      0.00       0.0       0.4                          
+    0:00:01     391.7      0.00       0.0       6.0                          
+    0:00:01     391.7      0.00       0.0       6.0                          
+    0:00:01     391.7      0.00       0.0       6.0                          
+    0:00:01     391.7      0.00       0.0       6.0                          
+    0:00:01     391.7      0.00       0.0       6.0                          
+    0:00:01     391.7      0.00       0.0       6.0                          
+    0:00:01     391.7      0.00       0.0       6.0                          
 
 
-  Beginning Design Rule Fixing  (max_capacitance)
+  Beginning Design Rule Fixing  (max_fanout)  (max_capacitance)
   ----------------------------
 
    ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
     TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:02    5777.3      0.00       0.0       0.4                          
+    0:00:01     391.7      0.00       0.0       6.0                          
   Global Optimization (Phase 1)
   Global Optimization (Phase 2)
   Global Optimization (Phase 3)
-    0:00:05    7997.8      0.00       0.0       0.1                          
-    0:00:05    8041.0      0.00       0.0       0.1                          
+    0:00:02     612.0      0.00       0.0       0.0                          
+    0:00:02     612.0      0.00       0.0       0.0                          
 Loaded alib file './alib-52/scx3_cmos8rf_lpvt_tt_1p2v_25c.db.alib'
-    0:00:07    8041.0      0.00       0.0       0.1                          
-    0:00:07    8041.0      0.00       0.0       0.1                          
+    0:00:04     612.0      0.00       0.0       0.0                          
+    0:00:04     612.0      0.00       0.0       0.0                          
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:05     496.8      0.00       0.0       0.0                          
+    0:00:05     496.8      0.00       0.0       0.0                          
 
 
   Beginning Area-Recovery Phase  (max_area 0)
@@ -381,7 +345,7 @@ Loaded alib file './alib-52/scx3_cmos8rf_lpvt_tt_1p2v_25c.db.alib'
    ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
     TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:08    8041.0      0.00       0.0       0.1                          
+    0:00:05     496.8      0.00       0.0       0.0                          
   Global Optimization (Phase 1)
   Global Optimization (Phase 2)
   Global Optimization (Phase 3)
@@ -396,11 +360,10 @@ Loaded alib file './alib-52/scx3_cmos8rf_lpvt_tt_1p2v_25c.db.alib'
   Global Optimization (Phase 8)
   Global Optimization (Phase 9)
   Global Optimization (Phase 10)
-  Global Optimization (Phase 11)
-    0:00:09    7992.0      0.00       0.0       0.1                          
-    0:00:09    7992.0      0.00       0.0       0.1                          
-    0:00:09    7992.0      0.00       0.0       0.1                          
-    0:00:09    7992.0      0.00       0.0       0.1                          
+    0:00:05     496.8      0.00       0.0       0.0                          
+    0:00:05     496.8      0.00       0.0       0.0                          
+    0:00:05     496.8      0.00       0.0       0.0                          
+    0:00:05     496.8      0.00       0.0       0.0                          
 Loading db file '/tools2/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db'
 
   Optimization Complete
@@ -409,7 +372,7 @@ Loading db file '/tools2/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_
 set maxpaths 20
 20
 set rpt_file "${top_level}.dc.rpt1"
-aes_addroundkey.dc.rpt1
+aes_xor.dc.rpt1
 check_design > $rpt_file
 report_area  >> ${rpt_file}
 report_power -hier -analysis_effort medium >> ${rpt_file}
@@ -441,19 +404,19 @@ check_design
 set verilogout_no_tri TRUE
 TRUE
 write -hierarchy -format verilog -output "${top_level}.nl.v"
-Writing verilog file '/home/user2/spring13/ams2378/ELEN6321/dc_shell_WDDL/tclfiles/aes_addroundkey.nl.v'.
+Writing verilog file '/home/user2/spring13/asc2171/avlsi/project/ELEN6321/dc_shell_WDDL/tclfiles/aes_xor.nl.v'.
 Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
 1
 # Generate Standard Delay Format (SDF) file
 write_sdf -context verilog "${top_level}.temp.sdf"
 Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
-Information: Writing timing information to file '/home/user2/spring13/ams2378/ELEN6321/dc_shell_WDDL/tclfiles/aes_addroundkey.temp.sdf'. (WT-3)
+Information: Writing timing information to file '/home/user2/spring13/asc2171/avlsi/project/ELEN6321/dc_shell_WDDL/tclfiles/aes_xor.temp.sdf'. (WT-3)
 1
 # Generate report file
 set maxpaths 20
 20
 set rpt_file "${top_level}.dc.rpt"
-aes_addroundkey.dc.rpt
+aes_xor.dc.rpt
 check_design > $rpt_file
 report_area  >> ${rpt_file}
 report_power -hier -analysis_effort medium >> ${rpt_file}

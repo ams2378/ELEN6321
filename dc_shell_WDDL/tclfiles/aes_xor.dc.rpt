@@ -1,0 +1,1698 @@
+1
+ 
+****************************************
+Report : area
+Design : aes_xor
+Version: A-2007.12-SP4
+Date   : Mon Mar 18 23:58:49 2013
+****************************************
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /tools2/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+
+Number of ports:               34
+Number of nets:                77
+Number of cells:               51
+Number of references:           4
+
+Combinational area:        243.360010
+Noncombinational area:     253.440002
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:           496.800012
+Total area:                 undefined
+1
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort medium
+Design : aes_xor
+Version: A-2007.12-SP4
+Date   : Mon Mar 18 23:58:49 2013
+****************************************
+
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /tools2/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+aes_xor                                7.77e-04 1.93e-02  589.413 2.00e-02 100.0
+1
+ 
+****************************************
+Report : design
+Design : aes_xor
+Version: A-2007.12-SP4
+Date   : Mon Mar 18 23:58:49 2013
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /tools2/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+
+Local Link Library:
+
+    {/tools2/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db}
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : tt_1p2v_25c
+    Library : scx3_cmos8rf_lpvt_tt_1p2v_25c
+    Process :   1.00
+    Temperature :  25.00
+    Voltage :   1.20
+    Interconnect Model : balanced_tree
+
+Wire Loading Model:
+
+    No wire loading specified.
+
+
+Wire Loading Model Mode: top.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    None Required
+
+Design Parameters:
+
+    None specified.
+1
+ 
+****************************************
+Report : cell
+Design : aes_xor
+Version: A-2007.12-SP4
+Date   : Mon Mar 18 23:58:49 2013
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U11                       XOR2X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+U12                       XOR2X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+U13                       XOR2X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+U14                       XOR2X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+U15                       XOR2X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+U16                       XOR2X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+U17                       XOR2X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+U18                       XOR2X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          11.520000 
+U19                       INVX1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U20                       INVX1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U21                       INVX1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U22                       INVX1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U23                       INVX1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U24                       INVX1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U25                       INVX1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U26                       INVX1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U27                       INVX1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U28                       INVX1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U29                       INVX1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U30                       INVX1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U31                       INVX1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U32                       INVX1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U33                       INVX1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U34                       INVX1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U35                       INVX1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U36                       INVX1TS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U37                       INVXLTS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U38                       INVXLTS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U39                       INVXLTS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U40                       INVXLTS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U41                       INVXLTS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U42                       INVXLTS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U43                       INVXLTS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U44                       INVXLTS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U45                       INVXLTS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U46                       INVXLTS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U47                       INVXLTS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U48                       INVXLTS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U49                       INVXLTS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U50                       INVXLTS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U51                       INVXLTS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U52                       INVXLTS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+U53                       INVXLTS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          4.320000  
+sa_o_reg[0]               SDFFQXLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          31.680000 n
+sa_o_reg[1]               SDFFQXLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          31.680000 n
+sa_o_reg[2]               SDFFQXLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          31.680000 n
+sa_o_reg[3]               SDFFQXLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          31.680000 n
+sa_o_reg[4]               SDFFQXLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          31.680000 n
+sa_o_reg[5]               SDFFQXLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          31.680000 n
+sa_o_reg[6]               SDFFQXLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          31.680000 n
+sa_o_reg[7]               SDFFQXLTS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          31.680000 n
+--------------------------------------------------------------------------------
+Total 51 cells                                            496.800012
+1
+ 
+****************************************
+Report : port
+        -verbose
+Design : aes_xor
+Version: A-2007.12-SP4
+Date   : Mon Mar 18 23:58:49 2013
+****************************************
+
+
+
+Attributes:
+    d - dont_touch_network
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+clk            in      0.0000   0.0000   --       0.00   --         d
+ld_r           in      0.0000   0.0000   --       0.00   --         
+sa_i[0]        in      0.0000   0.0000   --       0.00   --         
+sa_i[1]        in      0.0000   0.0000   --       0.00   --         
+sa_i[2]        in      0.0000   0.0000   --       0.00   --         
+sa_i[3]        in      0.0000   0.0000   --       0.00   --         
+sa_i[4]        in      0.0000   0.0000   --       0.00   --         
+sa_i[5]        in      0.0000   0.0000   --       0.00   --         
+sa_i[6]        in      0.0000   0.0000   --       0.00   --         
+sa_i[7]        in      0.0000   0.0000   --       0.00   --         
+text_in[0]     in      0.0000   0.0000   --       0.00   --         
+text_in[1]     in      0.0000   0.0000   --       0.00   --         
+text_in[2]     in      0.0000   0.0000   --       0.00   --         
+text_in[3]     in      0.0000   0.0000   --       0.00   --         
+text_in[4]     in      0.0000   0.0000   --       0.00   --         
+text_in[5]     in      0.0000   0.0000   --       0.00   --         
+text_in[6]     in      0.0000   0.0000   --       0.00   --         
+text_in[7]     in      0.0000   0.0000   --       0.00   --         
+w_i[0]         in      0.0000   0.0000   --       0.00   --         
+w_i[1]         in      0.0000   0.0000   --       0.00   --         
+w_i[2]         in      0.0000   0.0000   --       0.00   --         
+w_i[3]         in      0.0000   0.0000   --       0.00   --         
+w_i[4]         in      0.0000   0.0000   --       0.00   --         
+w_i[5]         in      0.0000   0.0000   --       0.00   --         
+w_i[6]         in      0.0000   0.0000   --       0.00   --         
+w_i[7]         in      0.0000   0.0000   --       0.00   --         
+sa_o[0]        out     0.0010   0.0000   --      --      --         
+sa_o[1]        out     0.0010   0.0000   --      --      --         
+sa_o[2]        out     0.0010   0.0000   --      --      --         
+sa_o[3]        out     0.0010   0.0000   --      --      --         
+sa_o[4]        out     0.0010   0.0000   --      --      --         
+sa_o[5]        out     0.0010   0.0000   --      --      --         
+sa_o[6]        out     0.0010   0.0000   --      --      --         
+sa_o[7]        out     0.0010   0.0000   --      --      --         
+
+
+              External  Max             Min                Min       Min
+              Number    Wireload        Wireload           Pin       Wire
+Port          Points    Model           Model              Load      Load
+--------------------------------------------------------------------------------
+clk                1      --              --              --        -- 
+ld_r               1      --              --              --        -- 
+sa_i[0]            1      --              --              --        -- 
+sa_i[1]            1      --              --              --        -- 
+sa_i[2]            1      --              --              --        -- 
+sa_i[3]            1      --              --              --        -- 
+sa_i[4]            1      --              --              --        -- 
+sa_i[5]            1      --              --              --        -- 
+sa_i[6]            1      --              --              --        -- 
+sa_i[7]            1      --              --              --        -- 
+text_in[0]         1      --              --              --        -- 
+text_in[1]         1      --              --              --        -- 
+text_in[2]         1      --              --              --        -- 
+text_in[3]         1      --              --              --        -- 
+text_in[4]         1      --              --              --        -- 
+text_in[5]         1      --              --              --        -- 
+text_in[6]         1      --              --              --        -- 
+text_in[7]         1      --              --              --        -- 
+w_i[0]             1      --              --              --        -- 
+w_i[1]             1      --              --              --        -- 
+w_i[2]             1      --              --              --        -- 
+w_i[3]             1      --              --              --        -- 
+w_i[4]             1      --              --              --        -- 
+w_i[5]             1      --              --              --        -- 
+w_i[6]             1      --              --              --        -- 
+w_i[7]             1      --              --              --        -- 
+sa_o[0]            1      --              --              --        -- 
+sa_o[1]            1      --              --              --        -- 
+sa_o[2]            1      --              --              --        -- 
+sa_o[3]            1      --              --              --        -- 
+sa_o[4]            1      --              --              --        -- 
+sa_o[5]            1      --              --              --        -- 
+sa_o[6]            1      --              --              --        -- 
+sa_o[7]            1      --              --              --        -- 
+
+                    Input Delay
+                  Min             Max       Related   Max
+Input Port    Rise    Fall    Rise    Fall   Clock  Fanout
+--------------------------------------------------------------------------------
+clk           --      --      --      --      --      2.00
+ld_r          0.00    0.00    0.00    0.00  clk       2.00
+sa_i[0]       0.00    0.00    0.00    0.00  clk       2.00
+sa_i[1]       0.00    0.00    0.00    0.00  clk       2.00
+sa_i[2]       0.00    0.00    0.00    0.00  clk       2.00
+sa_i[3]       0.00    0.00    0.00    0.00  clk       2.00
+sa_i[4]       0.00    0.00    0.00    0.00  clk       2.00
+sa_i[5]       0.00    0.00    0.00    0.00  clk       2.00
+sa_i[6]       0.00    0.00    0.00    0.00  clk       2.00
+sa_i[7]       0.00    0.00    0.00    0.00  clk       2.00
+text_in[0]    0.00    0.00    0.00    0.00  clk       2.00
+text_in[1]    0.00    0.00    0.00    0.00  clk       2.00
+text_in[2]    0.00    0.00    0.00    0.00  clk       2.00
+text_in[3]    0.00    0.00    0.00    0.00  clk       2.00
+text_in[4]    0.00    0.00    0.00    0.00  clk       2.00
+text_in[5]    0.00    0.00    0.00    0.00  clk       2.00
+text_in[6]    0.00    0.00    0.00    0.00  clk       2.00
+text_in[7]    0.00    0.00    0.00    0.00  clk       2.00
+w_i[0]        0.00    0.00    0.00    0.00  clk       2.00
+w_i[1]        0.00    0.00    0.00    0.00  clk       2.00
+w_i[2]        0.00    0.00    0.00    0.00  clk       2.00
+w_i[3]        0.00    0.00    0.00    0.00  clk       2.00
+w_i[4]        0.00    0.00    0.00    0.00  clk       2.00
+w_i[5]        0.00    0.00    0.00    0.00  clk       2.00
+w_i[6]        0.00    0.00    0.00    0.00  clk       2.00
+w_i[7]        0.00    0.00    0.00    0.00  clk       2.00
+
+
+               Max Drive      Min Drive      Resistance    Min    Min       Cell
+Input Port    Rise    Fall   Rise    Fall   Max     Min    Cap    Fanout    Deg
+--------------------------------------------------------------------------------
+clk           --      --     --      --     --      --     --     --        -- 
+ld_r          --      --     --      --     --      --     --     --        -- 
+sa_i[0]       --      --     --      --     --      --     --     --        -- 
+sa_i[1]       --      --     --      --     --      --     --     --        -- 
+sa_i[2]       --      --     --      --     --      --     --     --        -- 
+sa_i[3]       --      --     --      --     --      --     --     --        -- 
+sa_i[4]       --      --     --      --     --      --     --     --        -- 
+sa_i[5]       --      --     --      --     --      --     --     --        -- 
+sa_i[6]       --      --     --      --     --      --     --     --        -- 
+sa_i[7]       --      --     --      --     --      --     --     --        -- 
+text_in[0]    --      --     --      --     --      --     --     --        -- 
+text_in[1]    --      --     --      --     --      --     --     --        -- 
+text_in[2]    --      --     --      --     --      --     --     --        -- 
+text_in[3]    --      --     --      --     --      --     --     --        -- 
+text_in[4]    --      --     --      --     --      --     --     --        -- 
+text_in[5]    --      --     --      --     --      --     --     --        -- 
+text_in[6]    --      --     --      --     --      --     --     --        -- 
+text_in[7]    --      --     --      --     --      --     --     --        -- 
+w_i[0]        --      --     --      --     --      --     --     --        -- 
+w_i[1]        --      --     --      --     --      --     --     --        -- 
+w_i[2]        --      --     --      --     --      --     --     --        -- 
+w_i[3]        --      --     --      --     --      --     --     --        -- 
+w_i[4]        --      --     --      --     --      --     --     --        -- 
+w_i[5]        --      --     --      --     --      --     --     --        -- 
+w_i[6]        --      --     --      --     --      --     --     --        -- 
+w_i[7]        --      --     --      --     --      --     --     --        -- 
+
+
+               Max Tran        Min Tran
+Input Port    Rise    Fall    Rise    Fall
+--------------------------------------------------------------------------------
+clk           --      --      --      -- 
+ld_r          --      --      --      -- 
+sa_i[0]       --      --      --      -- 
+sa_i[1]       --      --      --      -- 
+sa_i[2]       --      --      --      -- 
+sa_i[3]       --      --      --      -- 
+sa_i[4]       --      --      --      -- 
+sa_i[5]       --      --      --      -- 
+sa_i[6]       --      --      --      -- 
+sa_i[7]       --      --      --      -- 
+text_in[0]    --      --      --      -- 
+text_in[1]    --      --      --      -- 
+text_in[2]    --      --      --      -- 
+text_in[3]    --      --      --      -- 
+text_in[4]    --      --      --      -- 
+text_in[5]    --      --      --      -- 
+text_in[6]    --      --      --      -- 
+text_in[7]    --      --      --      -- 
+w_i[0]        --      --      --      -- 
+w_i[1]        --      --      --      -- 
+w_i[2]        --      --      --      -- 
+w_i[3]        --      --      --      -- 
+w_i[4]        --      --      --      -- 
+w_i[5]        --      --      --      -- 
+w_i[6]        --      --      --      -- 
+w_i[7]        --      --      --      -- 
+
+
+                    Output Delay
+                  Min             Max      Related  Fanout
+Output Port   Rise    Fall    Rise    Fall  Clock     Load
+--------------------------------------------------------------------------------
+sa_o[0]       3.00    3.00    3.00    3.00  clk       0.00
+sa_o[1]       3.00    3.00    3.00    3.00  clk       0.00
+sa_o[2]       3.00    3.00    3.00    3.00  clk       0.00
+sa_o[3]       3.00    3.00    3.00    3.00  clk       0.00
+sa_o[4]       3.00    3.00    3.00    3.00  clk       0.00
+sa_o[5]       3.00    3.00    3.00    3.00  clk       0.00
+sa_o[6]       3.00    3.00    3.00    3.00  clk       0.00
+sa_o[7]       3.00    3.00    3.00    3.00  clk       0.00
+
+1
+ 
+****************************************
+Report : compile_options
+Design : aes_xor
+Version: A-2007.12-SP4
+Date   : Mon Mar 18 23:58:49 2013
+****************************************
+
+Design                                   Compile Option         Value
+--------------------------------------------------------------------------------
+aes_xor                                  flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+                                         fix_multiple_port_nets feedthroughs
+                                                                constants
+                                                                outputs
+                                                                buffer_constants
+                                         isolate_port           disabled
+--------------------------------------------------------------------------------
+1
+ 
+****************************************
+Report : constraint
+        -all_violators
+        -verbose
+Design : aes_xor
+Version: A-2007.12-SP4
+Date   : Mon Mar 18 23:58:49 2013
+****************************************
+
+
+  Startpoint: sa_i[0] (input port clocked by clk)
+  Endpoint: sa_o_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  sa_i[0] (in)                             0.00       0.00 f
+  sa_o_reg[0]/D (SDFFQXLTS)                0.00       0.00 f
+  data arrival time                                   0.00
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  sa_o_reg[0]/CK (SDFFQXLTS)               0.00       0.00 r
+  library hold time                        0.26       0.26
+  data required time                                  0.26
+  -----------------------------------------------------------
+  data required time                                  0.26
+  data arrival time                                   0.00
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.26
+
+
+  Startpoint: sa_i[1] (input port clocked by clk)
+  Endpoint: sa_o_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  sa_i[1] (in)                             0.00       0.00 f
+  sa_o_reg[1]/D (SDFFQXLTS)                0.00       0.00 f
+  data arrival time                                   0.00
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  sa_o_reg[1]/CK (SDFFQXLTS)               0.00       0.00 r
+  library hold time                        0.26       0.26
+  data required time                                  0.26
+  -----------------------------------------------------------
+  data required time                                  0.26
+  data arrival time                                   0.00
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.26
+
+
+  Startpoint: sa_i[2] (input port clocked by clk)
+  Endpoint: sa_o_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  sa_i[2] (in)                             0.00       0.00 f
+  sa_o_reg[2]/D (SDFFQXLTS)                0.00       0.00 f
+  data arrival time                                   0.00
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  sa_o_reg[2]/CK (SDFFQXLTS)               0.00       0.00 r
+  library hold time                        0.26       0.26
+  data required time                                  0.26
+  -----------------------------------------------------------
+  data required time                                  0.26
+  data arrival time                                   0.00
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.26
+
+
+  Startpoint: sa_i[3] (input port clocked by clk)
+  Endpoint: sa_o_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  sa_i[3] (in)                             0.00       0.00 f
+  sa_o_reg[3]/D (SDFFQXLTS)                0.00       0.00 f
+  data arrival time                                   0.00
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  sa_o_reg[3]/CK (SDFFQXLTS)               0.00       0.00 r
+  library hold time                        0.26       0.26
+  data required time                                  0.26
+  -----------------------------------------------------------
+  data required time                                  0.26
+  data arrival time                                   0.00
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.26
+
+
+  Startpoint: sa_i[4] (input port clocked by clk)
+  Endpoint: sa_o_reg[4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  sa_i[4] (in)                             0.00       0.00 f
+  sa_o_reg[4]/D (SDFFQXLTS)                0.00       0.00 f
+  data arrival time                                   0.00
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  sa_o_reg[4]/CK (SDFFQXLTS)               0.00       0.00 r
+  library hold time                        0.26       0.26
+  data required time                                  0.26
+  -----------------------------------------------------------
+  data required time                                  0.26
+  data arrival time                                   0.00
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.26
+
+
+  Startpoint: sa_i[5] (input port clocked by clk)
+  Endpoint: sa_o_reg[5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  sa_i[5] (in)                             0.00       0.00 f
+  sa_o_reg[5]/D (SDFFQXLTS)                0.00       0.00 f
+  data arrival time                                   0.00
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  sa_o_reg[5]/CK (SDFFQXLTS)               0.00       0.00 r
+  library hold time                        0.26       0.26
+  data required time                                  0.26
+  -----------------------------------------------------------
+  data required time                                  0.26
+  data arrival time                                   0.00
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.26
+
+
+  Startpoint: sa_i[6] (input port clocked by clk)
+  Endpoint: sa_o_reg[6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  sa_i[6] (in)                             0.00       0.00 f
+  sa_o_reg[6]/D (SDFFQXLTS)                0.00       0.00 f
+  data arrival time                                   0.00
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  sa_o_reg[6]/CK (SDFFQXLTS)               0.00       0.00 r
+  library hold time                        0.26       0.26
+  data required time                                  0.26
+  -----------------------------------------------------------
+  data required time                                  0.26
+  data arrival time                                   0.00
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.26
+
+
+  Startpoint: sa_i[7] (input port clocked by clk)
+  Endpoint: sa_o_reg[7]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  sa_i[7] (in)                             0.00       0.00 f
+  sa_o_reg[7]/D (SDFFQXLTS)                0.00       0.00 f
+  data arrival time                                   0.00
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  sa_o_reg[7]/CK (SDFFQXLTS)               0.00       0.00 r
+  library hold time                        0.26       0.26
+  data required time                                  0.26
+  -----------------------------------------------------------
+  data required time                                  0.26
+  data arrival time                                   0.00
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.26
+
+
+  Startpoint: w_i[0] (input port clocked by clk)
+  Endpoint: sa_o_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  w_i[0] (in)                              0.00       0.00 r
+  U51/Y (INVXLTS)                          0.05       0.05 f
+  U33/Y (INVX1TS)                          0.09       0.13 r
+  U11/Y (XOR2X1TS)                         0.07       0.20 f
+  sa_o_reg[0]/SI (SDFFQXLTS)               0.00       0.20 f
+  data arrival time                                   0.20
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  sa_o_reg[0]/CK (SDFFQXLTS)               0.00       0.00 r
+  library hold time                        0.21       0.21
+  data required time                                  0.21
+  -----------------------------------------------------------
+  data required time                                  0.21
+  data arrival time                                  -0.20
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.01
+
+
+  Startpoint: w_i[1] (input port clocked by clk)
+  Endpoint: sa_o_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  w_i[1] (in)                              0.00       0.00 r
+  U49/Y (INVXLTS)                          0.05       0.05 f
+  U29/Y (INVX1TS)                          0.09       0.13 r
+  U12/Y (XOR2X1TS)                         0.07       0.20 f
+  sa_o_reg[1]/SI (SDFFQXLTS)               0.00       0.20 f
+  data arrival time                                   0.20
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  sa_o_reg[1]/CK (SDFFQXLTS)               0.00       0.00 r
+  library hold time                        0.21       0.21
+  data required time                                  0.21
+  -----------------------------------------------------------
+  data required time                                  0.21
+  data arrival time                                  -0.20
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.01
+
+
+  Startpoint: w_i[2] (input port clocked by clk)
+  Endpoint: sa_o_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  w_i[2] (in)                              0.00       0.00 r
+  U47/Y (INVXLTS)                          0.05       0.05 f
+  U32/Y (INVX1TS)                          0.09       0.13 r
+  U13/Y (XOR2X1TS)                         0.07       0.20 f
+  sa_o_reg[2]/SI (SDFFQXLTS)               0.00       0.20 f
+  data arrival time                                   0.20
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  sa_o_reg[2]/CK (SDFFQXLTS)               0.00       0.00 r
+  library hold time                        0.21       0.21
+  data required time                                  0.21
+  -----------------------------------------------------------
+  data required time                                  0.21
+  data arrival time                                  -0.20
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.01
+
+
+  Startpoint: w_i[3] (input port clocked by clk)
+  Endpoint: sa_o_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  w_i[3] (in)                              0.00       0.00 r
+  U45/Y (INVXLTS)                          0.05       0.05 f
+  U35/Y (INVX1TS)                          0.09       0.13 r
+  U14/Y (XOR2X1TS)                         0.07       0.20 f
+  sa_o_reg[3]/SI (SDFFQXLTS)               0.00       0.20 f
+  data arrival time                                   0.20
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  sa_o_reg[3]/CK (SDFFQXLTS)               0.00       0.00 r
+  library hold time                        0.21       0.21
+  data required time                                  0.21
+  -----------------------------------------------------------
+  data required time                                  0.21
+  data arrival time                                  -0.20
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.01
+
+
+  Startpoint: w_i[4] (input port clocked by clk)
+  Endpoint: sa_o_reg[4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  w_i[4] (in)                              0.00       0.00 r
+  U46/Y (INVXLTS)                          0.05       0.05 f
+  U23/Y (INVX1TS)                          0.09       0.13 r
+  U15/Y (XOR2X1TS)                         0.07       0.20 f
+  sa_o_reg[4]/SI (SDFFQXLTS)               0.00       0.20 f
+  data arrival time                                   0.20
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  sa_o_reg[4]/CK (SDFFQXLTS)               0.00       0.00 r
+  library hold time                        0.21       0.21
+  data required time                                  0.21
+  -----------------------------------------------------------
+  data required time                                  0.21
+  data arrival time                                  -0.20
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.01
+
+
+  Startpoint: w_i[5] (input port clocked by clk)
+  Endpoint: sa_o_reg[5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  w_i[5] (in)                              0.00       0.00 r
+  U48/Y (INVXLTS)                          0.05       0.05 f
+  U21/Y (INVX1TS)                          0.09       0.13 r
+  U16/Y (XOR2X1TS)                         0.07       0.20 f
+  sa_o_reg[5]/SI (SDFFQXLTS)               0.00       0.20 f
+  data arrival time                                   0.20
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  sa_o_reg[5]/CK (SDFFQXLTS)               0.00       0.00 r
+  library hold time                        0.21       0.21
+  data required time                                  0.21
+  -----------------------------------------------------------
+  data required time                                  0.21
+  data arrival time                                  -0.20
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.01
+
+
+  Startpoint: w_i[6] (input port clocked by clk)
+  Endpoint: sa_o_reg[6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  w_i[6] (in)                              0.00       0.00 r
+  U50/Y (INVXLTS)                          0.05       0.05 f
+  U27/Y (INVX1TS)                          0.09       0.13 r
+  U17/Y (XOR2X1TS)                         0.07       0.20 f
+  sa_o_reg[6]/SI (SDFFQXLTS)               0.00       0.20 f
+  data arrival time                                   0.20
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  sa_o_reg[6]/CK (SDFFQXLTS)               0.00       0.00 r
+  library hold time                        0.21       0.21
+  data required time                                  0.21
+  -----------------------------------------------------------
+  data required time                                  0.21
+  data arrival time                                  -0.20
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.01
+
+
+  Startpoint: w_i[7] (input port clocked by clk)
+  Endpoint: sa_o_reg[7]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  w_i[7] (in)                              0.00       0.00 r
+  U52/Y (INVXLTS)                          0.05       0.05 f
+  U25/Y (INVX1TS)                          0.09       0.13 r
+  U18/Y (XOR2X1TS)                         0.07       0.20 f
+  sa_o_reg[7]/SI (SDFFQXLTS)               0.00       0.20 f
+  data arrival time                                   0.20
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  sa_o_reg[7]/CK (SDFFQXLTS)               0.00       0.00 r
+  library hold time                        0.21       0.21
+  data required time                                  0.21
+  -----------------------------------------------------------
+  data required time                                  0.21
+  data arrival time                                  -0.20
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.01
+
+
+    Net: n60
+
+    max_capacitance        0.00
+  - Capacitance            0.00
+  ------------------------------
+    Slack                  0.00  (VIOLATED: increase signficant digits)
+
+
+    Net: text_in[0]
+
+    max_capacitance        0.00
+  - Capacitance            0.00
+  ------------------------------
+    Slack                  0.00  (VIOLATED: increase signficant digits)
+
+
+    Net: text_in[1]
+
+    max_capacitance        0.00
+  - Capacitance            0.00
+  ------------------------------
+    Slack                  0.00  (VIOLATED: increase signficant digits)
+
+
+    Net: text_in[2]
+
+    max_capacitance        0.00
+  - Capacitance            0.00
+  ------------------------------
+    Slack                  0.00  (VIOLATED: increase signficant digits)
+
+
+    Net: text_in[3]
+
+    max_capacitance        0.00
+  - Capacitance            0.00
+  ------------------------------
+    Slack                  0.00  (VIOLATED: increase signficant digits)
+
+
+    Net: text_in[4]
+
+    max_capacitance        0.00
+  - Capacitance            0.00
+  ------------------------------
+    Slack                  0.00  (VIOLATED: increase signficant digits)
+
+
+    Net: text_in[5]
+
+    max_capacitance        0.00
+  - Capacitance            0.00
+  ------------------------------
+    Slack                  0.00  (VIOLATED: increase signficant digits)
+
+
+    Net: text_in[6]
+
+    max_capacitance        0.00
+  - Capacitance            0.00
+  ------------------------------
+    Slack                  0.00  (VIOLATED: increase signficant digits)
+
+
+    Net: text_in[7]
+
+    max_capacitance        0.00
+  - Capacitance            0.00
+  ------------------------------
+    Slack                  0.00  (VIOLATED: increase signficant digits)
+
+
+    Net: w_i[0]
+
+    max_capacitance        0.00
+  - Capacitance            0.00
+  ------------------------------
+    Slack                  0.00  (VIOLATED: increase signficant digits)
+
+
+    Net: w_i[1]
+
+    max_capacitance        0.00
+  - Capacitance            0.00
+  ------------------------------
+    Slack                  0.00  (VIOLATED: increase signficant digits)
+
+
+    Net: w_i[2]
+
+    max_capacitance        0.00
+  - Capacitance            0.00
+  ------------------------------
+    Slack                  0.00  (VIOLATED: increase signficant digits)
+
+
+    Net: w_i[3]
+
+    max_capacitance        0.00
+  - Capacitance            0.00
+  ------------------------------
+    Slack                  0.00  (VIOLATED: increase signficant digits)
+
+
+    Net: w_i[4]
+
+    max_capacitance        0.00
+  - Capacitance            0.00
+  ------------------------------
+    Slack                  0.00  (VIOLATED: increase signficant digits)
+
+
+    Net: w_i[5]
+
+    max_capacitance        0.00
+  - Capacitance            0.00
+  ------------------------------
+    Slack                  0.00  (VIOLATED: increase signficant digits)
+
+
+    Net: w_i[6]
+
+    max_capacitance        0.00
+  - Capacitance            0.00
+  ------------------------------
+    Slack                  0.00  (VIOLATED: increase signficant digits)
+
+
+    Net: w_i[7]
+
+    max_capacitance        0.00
+  - Capacitance            0.00
+  ------------------------------
+    Slack                  0.00  (VIOLATED: increase signficant digits)
+
+
+    Net: n11
+
+    max_capacitance        0.00
+  - Capacitance            0.00
+  ------------------------------
+    Slack                  0.00  (VIOLATED: increase signficant digits)
+
+
+    Net: n13
+
+    max_capacitance        0.00
+  - Capacitance            0.00
+  ------------------------------
+    Slack                  0.00  (VIOLATED: increase signficant digits)
+
+
+    Net: n15
+
+    max_capacitance        0.00
+  - Capacitance            0.00
+  ------------------------------
+    Slack                  0.00  (VIOLATED: increase signficant digits)
+
+
+    Net: n17
+
+    max_capacitance        0.00
+  - Capacitance            0.00
+  ------------------------------
+    Slack                  0.00  (VIOLATED: increase signficant digits)
+
+
+    Net: n19
+
+    max_capacitance        0.00
+  - Capacitance            0.00
+  ------------------------------
+    Slack                  0.00  (VIOLATED: increase signficant digits)
+
+
+    Net: n21
+
+    max_capacitance        0.00
+  - Capacitance            0.00
+  ------------------------------
+    Slack                  0.00  (VIOLATED: increase signficant digits)
+
+
+    Net: n23
+
+    max_capacitance        0.00
+  - Capacitance            0.00
+  ------------------------------
+    Slack                  0.00  (VIOLATED: increase signficant digits)
+
+
+    Net: n25
+
+    max_capacitance        0.00
+  - Capacitance            0.00
+  ------------------------------
+    Slack                  0.00  (VIOLATED: increase signficant digits)
+
+
+    Design: aes_xor
+
+    max_area               0.00
+  - Current Area         496.80
+  ------------------------------
+    Slack               -496.80  (VIOLATED)
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 100
+        -max_paths 20
+Design : aes_xor
+Version: A-2007.12-SP4
+Date   : Mon Mar 18 23:58:49 2013
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: sa_o_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sa_o[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  sa_o_reg[0]/CK (SDFFQXLTS)               0.00       0.00 r
+  sa_o_reg[0]/Q (SDFFQXLTS)                1.19       1.19 f
+  sa_o[0] (out)                            0.00       1.19 f
+  data arrival time                                   1.19
+
+  clock clk (rise edge)                   12.00      12.00
+  clock network delay (ideal)              0.00      12.00
+  output external delay                   -3.00       9.00
+  data required time                                  9.00
+  -----------------------------------------------------------
+  data required time                                  9.00
+  data arrival time                                  -1.19
+  -----------------------------------------------------------
+  slack (MET)                                         7.81
+
+
+  Startpoint: sa_o_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sa_o[1] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  sa_o_reg[1]/CK (SDFFQXLTS)               0.00       0.00 r
+  sa_o_reg[1]/Q (SDFFQXLTS)                1.19       1.19 f
+  sa_o[1] (out)                            0.00       1.19 f
+  data arrival time                                   1.19
+
+  clock clk (rise edge)                   12.00      12.00
+  clock network delay (ideal)              0.00      12.00
+  output external delay                   -3.00       9.00
+  data required time                                  9.00
+  -----------------------------------------------------------
+  data required time                                  9.00
+  data arrival time                                  -1.19
+  -----------------------------------------------------------
+  slack (MET)                                         7.81
+
+
+  Startpoint: sa_o_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sa_o[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  sa_o_reg[2]/CK (SDFFQXLTS)               0.00       0.00 r
+  sa_o_reg[2]/Q (SDFFQXLTS)                1.19       1.19 f
+  sa_o[2] (out)                            0.00       1.19 f
+  data arrival time                                   1.19
+
+  clock clk (rise edge)                   12.00      12.00
+  clock network delay (ideal)              0.00      12.00
+  output external delay                   -3.00       9.00
+  data required time                                  9.00
+  -----------------------------------------------------------
+  data required time                                  9.00
+  data arrival time                                  -1.19
+  -----------------------------------------------------------
+  slack (MET)                                         7.81
+
+
+  Startpoint: sa_o_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sa_o[3] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  sa_o_reg[3]/CK (SDFFQXLTS)               0.00       0.00 r
+  sa_o_reg[3]/Q (SDFFQXLTS)                1.19       1.19 f
+  sa_o[3] (out)                            0.00       1.19 f
+  data arrival time                                   1.19
+
+  clock clk (rise edge)                   12.00      12.00
+  clock network delay (ideal)              0.00      12.00
+  output external delay                   -3.00       9.00
+  data required time                                  9.00
+  -----------------------------------------------------------
+  data required time                                  9.00
+  data arrival time                                  -1.19
+  -----------------------------------------------------------
+  slack (MET)                                         7.81
+
+
+  Startpoint: sa_o_reg[4]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sa_o[4] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  sa_o_reg[4]/CK (SDFFQXLTS)               0.00       0.00 r
+  sa_o_reg[4]/Q (SDFFQXLTS)                1.19       1.19 f
+  sa_o[4] (out)                            0.00       1.19 f
+  data arrival time                                   1.19
+
+  clock clk (rise edge)                   12.00      12.00
+  clock network delay (ideal)              0.00      12.00
+  output external delay                   -3.00       9.00
+  data required time                                  9.00
+  -----------------------------------------------------------
+  data required time                                  9.00
+  data arrival time                                  -1.19
+  -----------------------------------------------------------
+  slack (MET)                                         7.81
+
+
+  Startpoint: sa_o_reg[5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sa_o[5] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  sa_o_reg[5]/CK (SDFFQXLTS)               0.00       0.00 r
+  sa_o_reg[5]/Q (SDFFQXLTS)                1.19       1.19 f
+  sa_o[5] (out)                            0.00       1.19 f
+  data arrival time                                   1.19
+
+  clock clk (rise edge)                   12.00      12.00
+  clock network delay (ideal)              0.00      12.00
+  output external delay                   -3.00       9.00
+  data required time                                  9.00
+  -----------------------------------------------------------
+  data required time                                  9.00
+  data arrival time                                  -1.19
+  -----------------------------------------------------------
+  slack (MET)                                         7.81
+
+
+  Startpoint: sa_o_reg[6]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sa_o[6] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  sa_o_reg[6]/CK (SDFFQXLTS)               0.00       0.00 r
+  sa_o_reg[6]/Q (SDFFQXLTS)                1.19       1.19 f
+  sa_o[6] (out)                            0.00       1.19 f
+  data arrival time                                   1.19
+
+  clock clk (rise edge)                   12.00      12.00
+  clock network delay (ideal)              0.00      12.00
+  output external delay                   -3.00       9.00
+  data required time                                  9.00
+  -----------------------------------------------------------
+  data required time                                  9.00
+  data arrival time                                  -1.19
+  -----------------------------------------------------------
+  slack (MET)                                         7.81
+
+
+  Startpoint: sa_o_reg[7]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sa_o[7] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  sa_o_reg[7]/CK (SDFFQXLTS)               0.00       0.00 r
+  sa_o_reg[7]/Q (SDFFQXLTS)                1.19       1.19 f
+  sa_o[7] (out)                            0.00       1.19 f
+  data arrival time                                   1.19
+
+  clock clk (rise edge)                   12.00      12.00
+  clock network delay (ideal)              0.00      12.00
+  output external delay                   -3.00       9.00
+  data required time                                  9.00
+  -----------------------------------------------------------
+  data required time                                  9.00
+  data arrival time                                  -1.19
+  -----------------------------------------------------------
+  slack (MET)                                         7.81
+
+
+  Startpoint: sa_o_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sa_o[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  sa_o_reg[0]/CK (SDFFQXLTS)               0.00       0.00 r
+  sa_o_reg[0]/Q (SDFFQXLTS)                1.08       1.08 r
+  sa_o[0] (out)                            0.00       1.08 r
+  data arrival time                                   1.08
+
+  clock clk (rise edge)                   12.00      12.00
+  clock network delay (ideal)              0.00      12.00
+  output external delay                   -3.00       9.00
+  data required time                                  9.00
+  -----------------------------------------------------------
+  data required time                                  9.00
+  data arrival time                                  -1.08
+  -----------------------------------------------------------
+  slack (MET)                                         7.92
+
+
+  Startpoint: sa_o_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sa_o[1] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  sa_o_reg[1]/CK (SDFFQXLTS)               0.00       0.00 r
+  sa_o_reg[1]/Q (SDFFQXLTS)                1.08       1.08 r
+  sa_o[1] (out)                            0.00       1.08 r
+  data arrival time                                   1.08
+
+  clock clk (rise edge)                   12.00      12.00
+  clock network delay (ideal)              0.00      12.00
+  output external delay                   -3.00       9.00
+  data required time                                  9.00
+  -----------------------------------------------------------
+  data required time                                  9.00
+  data arrival time                                  -1.08
+  -----------------------------------------------------------
+  slack (MET)                                         7.92
+
+
+  Startpoint: sa_o_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sa_o[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  sa_o_reg[2]/CK (SDFFQXLTS)               0.00       0.00 r
+  sa_o_reg[2]/Q (SDFFQXLTS)                1.08       1.08 r
+  sa_o[2] (out)                            0.00       1.08 r
+  data arrival time                                   1.08
+
+  clock clk (rise edge)                   12.00      12.00
+  clock network delay (ideal)              0.00      12.00
+  output external delay                   -3.00       9.00
+  data required time                                  9.00
+  -----------------------------------------------------------
+  data required time                                  9.00
+  data arrival time                                  -1.08
+  -----------------------------------------------------------
+  slack (MET)                                         7.92
+
+
+  Startpoint: sa_o_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sa_o[3] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  sa_o_reg[3]/CK (SDFFQXLTS)               0.00       0.00 r
+  sa_o_reg[3]/Q (SDFFQXLTS)                1.08       1.08 r
+  sa_o[3] (out)                            0.00       1.08 r
+  data arrival time                                   1.08
+
+  clock clk (rise edge)                   12.00      12.00
+  clock network delay (ideal)              0.00      12.00
+  output external delay                   -3.00       9.00
+  data required time                                  9.00
+  -----------------------------------------------------------
+  data required time                                  9.00
+  data arrival time                                  -1.08
+  -----------------------------------------------------------
+  slack (MET)                                         7.92
+
+
+  Startpoint: sa_o_reg[4]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sa_o[4] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  sa_o_reg[4]/CK (SDFFQXLTS)               0.00       0.00 r
+  sa_o_reg[4]/Q (SDFFQXLTS)                1.08       1.08 r
+  sa_o[4] (out)                            0.00       1.08 r
+  data arrival time                                   1.08
+
+  clock clk (rise edge)                   12.00      12.00
+  clock network delay (ideal)              0.00      12.00
+  output external delay                   -3.00       9.00
+  data required time                                  9.00
+  -----------------------------------------------------------
+  data required time                                  9.00
+  data arrival time                                  -1.08
+  -----------------------------------------------------------
+  slack (MET)                                         7.92
+
+
+  Startpoint: sa_o_reg[5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sa_o[5] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  sa_o_reg[5]/CK (SDFFQXLTS)               0.00       0.00 r
+  sa_o_reg[5]/Q (SDFFQXLTS)                1.08       1.08 r
+  sa_o[5] (out)                            0.00       1.08 r
+  data arrival time                                   1.08
+
+  clock clk (rise edge)                   12.00      12.00
+  clock network delay (ideal)              0.00      12.00
+  output external delay                   -3.00       9.00
+  data required time                                  9.00
+  -----------------------------------------------------------
+  data required time                                  9.00
+  data arrival time                                  -1.08
+  -----------------------------------------------------------
+  slack (MET)                                         7.92
+
+
+  Startpoint: sa_o_reg[6]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sa_o[6] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  sa_o_reg[6]/CK (SDFFQXLTS)               0.00       0.00 r
+  sa_o_reg[6]/Q (SDFFQXLTS)                1.08       1.08 r
+  sa_o[6] (out)                            0.00       1.08 r
+  data arrival time                                   1.08
+
+  clock clk (rise edge)                   12.00      12.00
+  clock network delay (ideal)              0.00      12.00
+  output external delay                   -3.00       9.00
+  data required time                                  9.00
+  -----------------------------------------------------------
+  data required time                                  9.00
+  data arrival time                                  -1.08
+  -----------------------------------------------------------
+  slack (MET)                                         7.92
+
+
+  Startpoint: sa_o_reg[7]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sa_o[7] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  sa_o_reg[7]/CK (SDFFQXLTS)               0.00       0.00 r
+  sa_o_reg[7]/Q (SDFFQXLTS)                1.08       1.08 r
+  sa_o[7] (out)                            0.00       1.08 r
+  data arrival time                                   1.08
+
+  clock clk (rise edge)                   12.00      12.00
+  clock network delay (ideal)              0.00      12.00
+  output external delay                   -3.00       9.00
+  data required time                                  9.00
+  -----------------------------------------------------------
+  data required time                                  9.00
+  data arrival time                                  -1.08
+  -----------------------------------------------------------
+  slack (MET)                                         7.92
+
+
+  Startpoint: text_in[0] (input port clocked by clk)
+  Endpoint: sa_o_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  text_in[0] (in)                          0.00       0.00 f
+  U43/Y (INVXLTS)                          0.09       0.09 r
+  U31/Y (INVX1TS)                          0.09       0.19 f
+  U11/Y (XOR2X1TS)                         0.21       0.39 f
+  sa_o_reg[0]/SI (SDFFQXLTS)               0.00       0.39 f
+  data arrival time                                   0.39
+
+  clock clk (rise edge)                   12.00      12.00
+  clock network delay (ideal)              0.00      12.00
+  sa_o_reg[0]/CK (SDFFQXLTS)               0.00      12.00 r
+  library setup time                      -0.23      11.77
+  data required time                                 11.77
+  -----------------------------------------------------------
+  data required time                                 11.77
+  data arrival time                                  -0.39
+  -----------------------------------------------------------
+  slack (MET)                                        11.37
+
+
+  Startpoint: text_in[1] (input port clocked by clk)
+  Endpoint: sa_o_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  text_in[1] (in)                          0.00       0.00 f
+  U41/Y (INVXLTS)                          0.09       0.09 r
+  U30/Y (INVX1TS)                          0.09       0.19 f
+  U12/Y (XOR2X1TS)                         0.21       0.39 f
+  sa_o_reg[1]/SI (SDFFQXLTS)               0.00       0.39 f
+  data arrival time                                   0.39
+
+  clock clk (rise edge)                   12.00      12.00
+  clock network delay (ideal)              0.00      12.00
+  sa_o_reg[1]/CK (SDFFQXLTS)               0.00      12.00 r
+  library setup time                      -0.23      11.77
+  data required time                                 11.77
+  -----------------------------------------------------------
+  data required time                                 11.77
+  data arrival time                                  -0.39
+  -----------------------------------------------------------
+  slack (MET)                                        11.37
+
+
+  Startpoint: text_in[2] (input port clocked by clk)
+  Endpoint: sa_o_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  text_in[2] (in)                          0.00       0.00 f
+  U39/Y (INVXLTS)                          0.09       0.09 r
+  U34/Y (INVX1TS)                          0.09       0.19 f
+  U13/Y (XOR2X1TS)                         0.21       0.39 f
+  sa_o_reg[2]/SI (SDFFQXLTS)               0.00       0.39 f
+  data arrival time                                   0.39
+
+  clock clk (rise edge)                   12.00      12.00
+  clock network delay (ideal)              0.00      12.00
+  sa_o_reg[2]/CK (SDFFQXLTS)               0.00      12.00 r
+  library setup time                      -0.23      11.77
+  data required time                                 11.77
+  -----------------------------------------------------------
+  data required time                                 11.77
+  data arrival time                                  -0.39
+  -----------------------------------------------------------
+  slack (MET)                                        11.37
+
+
+  Startpoint: text_in[3] (input port clocked by clk)
+  Endpoint: sa_o_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  text_in[3] (in)                          0.00       0.00 f
+  U37/Y (INVXLTS)                          0.09       0.09 r
+  U36/Y (INVX1TS)                          0.09       0.19 f
+  U14/Y (XOR2X1TS)                         0.21       0.39 f
+  sa_o_reg[3]/SI (SDFFQXLTS)               0.00       0.39 f
+  data arrival time                                   0.39
+
+  clock clk (rise edge)                   12.00      12.00
+  clock network delay (ideal)              0.00      12.00
+  sa_o_reg[3]/CK (SDFFQXLTS)               0.00      12.00 r
+  library setup time                      -0.23      11.77
+  data required time                                 11.77
+  -----------------------------------------------------------
+  data required time                                 11.77
+  data arrival time                                  -0.39
+  -----------------------------------------------------------
+  slack (MET)                                        11.37
+
+
+1

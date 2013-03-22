@@ -1,5 +1,5 @@
 Using: /usr/bin/time -p /usr/cad/meta/rel/hspice/linux/hspice and.sp
- ****** HSPICE  --  A-2007.09  32-BIT    (Aug 28 2007) 15:28:30 02/23/2013 linux
+ ****** HSPICE  --  A-2007.09  32-BIT    (Aug 28 2007) 19:57:08 02/23/2013 linux
   Copyright (C) 2007 Synopsys, Inc. All Rights Reserved.                        
   Unpublished-rights reserved under US copyright laws.
   This program is protected by law and is subject to the 
@@ -10,8 +10,8 @@ Using: /usr/bin/time -p /usr/cad/meta/rel/hspice/linux/hspice and.sp
   Input File: and.sp                                                            
  lic:  
  lic: FLEXlm: v8.5b 
- lic: USER:   jy2525               HOSTNAME: vlsi12 
- lic: HOSTID: e091f595b530         PID:      359 
+ lic: USER:   asc2171              HOSTNAME: vlsi9 
+ lic: HOSTID: e091f595b94f         PID:      26629 
  lic: Using FLEXlm license file: 
  lic: 27000@bioeeserv.ee.columbia.edu 
  lic: Checkout 1 hspice;  Encryption code: DEA048380846260FC020 
@@ -25705,7 +25705,7 @@ Using: /usr/bin/time -p /usr/cad/meta/rel/hspice/linux/hspice and.sp
  +  esd_event        = 0
  +  esd_exit         = 1
  +  esd_extr         = 0
- .include '/user4/spring13/jy2525/lib/subckts.sp'
+ .include '/user2/spring13/asc2171/avlsi/project/elen6321/simulation_vlsi/lib/subckts.sp'
  *.global vdd vss vss1 
  *.scale meter 
 
@@ -27283,7 +27283,7 @@ Using: /usr/bin/time -p /usr/cad/meta/rel/hspice/linux/hspice and.sp
  *.subckt antennats a 
  .subckt antennats a vss vdd
  d0 vss a tdndsx area=0.4898p perim=2.82u 
-  **warning** (/user4/spring13/jy2525/lib/subckts.sp:1577) parameter  perim    is ignored
+  **warning** (/user2/spring13/asc2171/avlsi/project/ELEN6321/simulation_vlsi/lib/subckts.sp:1577) parameter  perim    is ignored
  .ends antennats 
 
  **** 
@@ -39219,6 +39219,7 @@ Using: /usr/bin/time -p /usr/cad/meta/rel/hspice/linux/hspice and.sp
  *measurements
  .tran 300n 10u
  .measure avg_pow avg power from=1u to=10u
+ .plot tran p(vandvdd) 
  .end
 
  **warning**  pivtol too large
@@ -39248,7 +39249,7 @@ Using: /usr/bin/time -p /usr/cad/meta/rel/hspice/linux/hspice and.sp
        runlvl= 5       bypass= 0      mbypass=   2.00   bytol= 100.00u
  ***********************************************************************
 
-1****** HSPICE  --  A-2007.09  32-BIT    (Aug 28 2007) 15:28:30 02/23/2013 linux
+1****** HSPICE  --  A-2007.09  32-BIT    (Aug 28 2007) 19:57:08 02/23/2013 linux
  ******  
  *include model and subckts                                                     
   ******  circuit name directory                                                
@@ -39263,7 +39264,7 @@ Using: /usr/bin/time -p /usr/cad/meta/rel/hspice/linux/hspice and.sp
         5 x1and2xlts.x3.                  lpnfet             1.00 
         6 x1and2xlts.x4.                  lppfet             1.00 
         7 x1and2xlts.x5.                  lppfet             1.00 
-1****** HSPICE  --  A-2007.09  32-BIT    (Aug 28 2007) 15:28:30 02/23/2013 linux
+1****** HSPICE  --  A-2007.09  32-BIT    (Aug 28 2007) 19:57:08 02/23/2013 linux
  ******  
  *include model and subckts                                                     
   ******  mos   model parameters           tnom=  25.000 temp=  25.000          
@@ -41454,7 +41455,7 @@ Model Name: lppch
   Opening plot unit= 15
  file=and.pa0                                                                  
 
-1****** HSPICE  --  A-2007.09  32-BIT    (Aug 28 2007) 15:28:30 02/23/2013 linux
+1****** HSPICE  --  A-2007.09  32-BIT    (Aug 28 2007) 19:57:08 02/23/2013 linux
  ******  
  *include model and subckts                                                     
   ******  operating point information      tnom=  25.000 temp=  25.000          
@@ -41472,8 +41473,54 @@ Model Name: lppch
  ******  
    avg_pow=  9.1323E-09  from=  1.0000E-06     to=  1.0000E-05
 
+a
+
+
+      time       p(vandvdd)
+ (a       )     -10.0000n      -5.0000n       0.            5.0000n     10.0000n
+                      +             +             +             +             + 
+    0.        -1.001p-+------+------+------+------a------+------+------+------+-
+  300.0000n -955.328f +      +      +      +      a      +      +      +      + 
+  600.0000n -955.328f +      +      +      +      a      +      +      +      + 
+  900.0000n -955.328f +      +      +      +      a      +      +      +      + 
+    1.2000u   -5.247n +      +     a+      +      +      +      +      +      + 
+    1.5000u  -25.379p +      +      +      +      a      +      +      +      + 
+    1.8000u  -13.225p +      +      +      +      a      +      +      +      + 
+    2.1000u   -2.426n +      +      +      a      +      +      +      +      + 
+    2.4000u   -2.058p +      +      +      +      a      +      +      +      + 
+    2.7000u   -2.058p +      +      +      +      a      +      +      +      + 
+    3.0000u   -2.058p-+------+------+------+------a------+------+------+------+-
+    3.3000u  -13.261p +      +      +      +      a      +      +      +      + 
+    3.6000u   -9.424p +      +      +      +      a      +      +      +      + 
+    3.9000u   -7.293p +      +      +      +      a      +      +      +      + 
+    4.2000u -955.316f +      +      +      +      a      +      +      +      + 
+    4.5000u -955.326f +      +      +      +      a      +      +      +      + 
+    4.8000u -955.327f +      +      +      +      a      +      +      +      + 
+    5.1000u -955.330f +      +      +      +      a      +      +      +      + 
+    5.4000u  -36.767p +      +      +      +      a      +      +      +      + 
+    5.7000u  -15.722p +      +      +      +      a      +      +      +      + 
+    6.0000u  -10.133p-+------+------+------+------a------+------+------+------+-
+    6.3000u   -2.058p +      +      +      +      a      +      +      +      + 
+    6.6000u   -2.058p +      +      +      +      a      +      +      +      + 
+    6.9000u   -2.058p +      +      +      +      a      +      +      +      + 
+    7.2000u   -4.402n +      +      + a    +      +      +      +      +      + 
+    7.5000u  -11.112p +      +      +      +      a      +      +      +      + 
+    7.8000u   -8.218p +      +      +      +      a      +      +      +      + 
+    8.1000u    3.333n +      +      +      +      +      + a    +      +      + 
+    8.4000u -955.329f +      +      +      +      a      +      +      +      + 
+    8.7000u -955.329f +      +      +      +      a      +      +      +      + 
+    9.0000u -955.328f-+------+------+------+------a------+------+------+------+-
+    9.3000u  -69.895p +      +      +      +      a      +      +      +      + 
+    9.6000u  -19.273p +      +      +      +      a      +      +      +      + 
+    9.9000u  -11.562p +      +      +      +      a      +      +      +      + 
+   10.0000u  -10.159p +      +      +      +      a      +      +      +      + 
+                      +             +             +             +             + 
+
+b
+
+
           ***** job concluded
-1****** HSPICE  --  A-2007.09  32-BIT    (Aug 28 2007) 15:28:30 02/23/2013 linux
+1****** HSPICE  --  A-2007.09  32-BIT    (Aug 28 2007) 19:57:08 02/23/2013 linux
  ******  
  *include model and subckts                                                     
   ******  job statistics summary           tnom=  25.000 temp=  25.000          
@@ -41488,14 +41535,14 @@ Model Name: lppch
     analysis           time    # points   tot. iter  conv.iter
 
     op point           0.00           1          16
-    transient          0.33          34        2436         910 rev=       217
-    readin             0.87
+    transient          0.35          34        2436         910 rev=       217
+    readin             0.95
     errchk             0.07
     setup              0.00
     output             0.00
-           total cpu time          1.27 seconds
-               job started at  15:28:30 02/23/2013
-               job ended   at  15:28:32 02/23/2013
+           total cpu time          1.37 seconds
+               job started at  19:57:08 02/23/2013
+               job ended   at  19:57:10 02/23/2013
 
 
  Init: hspice initialization file: /usr/cad/meta/rel/hspice/hspice.ini

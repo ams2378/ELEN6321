@@ -1,0 +1,36 @@
+* "simulator" "HSPICE" 
+* "version" "A-2007.09"
+* "format" "HSP"
+* "rundate" "19:30:24 02/23/2013 "
+* "netlist" "wddlxor.sp "
+* "runtitle" "*include model and subckts"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000f       
+.nodeset
++ d0_n_in =   1.2000        
++ d0_p_in =  10.0000m       
++ d1_n_in =   1.2000        
++ d1_p_in =  10.0000m       
++ d_n_out =   1.2000        
++ d_p_out =   1.3479n       
++ n1 =   1.3016n       
++ n2 =   1.2000        
++ n3 =   1.2000        
++ n4 =   1.2833n       
++ n5 =   1.2000        
++ n6 =   1.3016n       
++ n7 =   1.3016n       
++ n8 =   1.2000        
++ vdd =   1.2000        
++ x9oa22x1ts.hnet17 = 202.6126m       
++ x9oa22x1ts.hnet21 =   1.2000        
++ x9oa22x1ts.net40 =   3.2585n       
++ x9oa22x1ts.nmin =   5.2306n       
++ x10ao22x1ts.hnet17 = 969.2470m       
++ x10ao22x1ts.hnet21 =   1.9855n       
++ x10ao22x1ts.net32 =   1.2000        
++ x10ao22x1ts.nmin =   1.2000        
+***   END: Saved Operating Point ***                     

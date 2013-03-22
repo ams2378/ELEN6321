@@ -1,0 +1,2 @@
+Using: /usr/bin/time -p /usr/cad/meta/rel/hspice/linux/hspice addround.sp
+[1] 13876

@@ -1,0 +1,23 @@
+RADIX 4 4 4
+IO I I O 
+VNAME a_i[3:0] b_i[3:0] out[3:0]
+
+; tunit sets the time unit.
+tunit ns
+; trise specifies the rise time of each input vector.
+trise 100 F F F
+; tfall specifies the fall time of each input vector.
+tfall 100 F F F
+
+
+vih 1.2 F F 0
+vil 0 F F 0
+vth 0.6 F F F
+
+50 F F X
+1000 0 0 F
+
+
+
+
+

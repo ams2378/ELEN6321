@@ -1,7 +1,7 @@
 * "simulator" "HSPICE" 
 * "version" "A-2007.09"
 * "format" "HSP"
-* "rundate" "16:04:35 02/23/2013 "
+* "rundate" "20:08:25 02/23/2013 "
 * "netlist" "or.sp "
 * "runtitle" "*include model and subckts"
 * time =    0.            

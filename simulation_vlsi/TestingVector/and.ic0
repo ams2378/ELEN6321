@@ -1,0 +1,35 @@
+* "simulator" "HSPICE" 
+* "version" "A-2007.09"
+* "format" "HSP"
+* "rundate" "15:12:50 03/06/2013 "
+* "netlist" "and.sp "
+* "runtitle" "*include model and subckts"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000f       
+.nodeset
++ a_i0 =   1.2000        
++ a_i1 =   1.2000        
++ a_i2 =   1.2000        
++ a_i3 =   1.2000        
++ b_i0 =   1.2000        
++ b_i1 =   1.2000        
++ b_i2 =   1.2000        
++ b_i3 =   1.2000        
++ out0 =   1.2000        
++ out1 =   1.2000        
++ out2 =   1.2000        
++ out3 =   1.2000        
++ vdd =   1.2000        
++ vss =   0.            
++ x1andgate.x1and2xlts.hnet14 =   3.1102n       
++ x1andgate.x1and2xlts.net11 =   4.9336n       
++ x1andgate.x2and2xlts.hnet14 =   3.1102n       
++ x1andgate.x2and2xlts.net11 =   4.9336n       
++ x1andgate.x3and2xlts.hnet14 =   3.1102n       
++ x1andgate.x3and2xlts.net11 =   4.9336n       
++ x1andgate.x4and2xlts.hnet14 =   3.1102n       
++ x1andgate.x4and2xlts.net11 =   4.9336n       
+***   END: Saved Operating Point ***                     

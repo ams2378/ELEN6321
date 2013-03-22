@@ -1,0 +1,4 @@
+Time            Signal          Simulated    Expected
+====            ======          =========    ========
+1.000000e-06    out2                1           0
+1.000000e-06    out0                1           0

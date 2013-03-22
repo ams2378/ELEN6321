@@ -13,25 +13,18 @@
 
 *define parameters
 .param supply0=1.2
-.param SD=10p
+.param SD=100n
 
 *circuit instantiation
-x1INVXLTS n9 b_i gnd vdd INVXLTS
-x2INVXLTS n10 n9 gnd vdd INVXLTS
-x3INVXLTS n11 prechrg_i gnd vdd INVXLTS
-x4INVXLTS n12 n11 gnd vdd INVXLTS
-x5INVXLTS n13 a_i gnd vdd INVXLTS
-x6INVXLTS n14 n13 gnd vdd INVXLTS
-x7NOR2XLTS nor_o n14 n16 gnd vdd NOR2XLTS
-x8OR2XLTS n12 n10 n16 gnd vdd OR2XLTS
-x9NOR2XLTS or_o n12 n15 gnd vdd NOR2XLTS
-x10NOR2XLTS n15 n14 n10 gnd vdd NOR2XLTS
+X1AND2XLTS na_i nb_i out gnd vdd AND2XLTS
+x1OR2XLTS a_i b_i nout gnd vdd OR2XLTS
+x1INVXLTS na_i a_i gnd vdd INVXLTS
+x2INVXLTS nb_i b_i gnd vdd INVXLTS
 
 
 *power and input signals
 va_i a_i 0 PULSE(0.01 supply0 0 SD SD 1.9u 4u)
 vb_i b_i 0 PULSE(0.01 supply0 0 SD SD 1u 2u)
-vprechrg_i  prechrg_i 0 PULSE(0.01 supply0 0 SD SD 1u 2u)
 vvss vss 0 dc=0
 vvdd vdd 0 dc=supply0
 

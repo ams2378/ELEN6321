@@ -1,0 +1,46 @@
+RADIX 44 44
+;RADIX 44 44 44 44 44 44 44 44
+;+ 44 44 44 44 44 44 44 44
+;+ 44 44 44 44 44 44 44 44
+;+ 44 44 44 44 44 44 44 44
+
+IO II 00
+;IO II II II II OO OO OO OO
+;+ II II II II OO OO OO OO
+;+ II II II II OO OO OO OO
+;+ II II II II OO OO OO OO
+
+VNAME s00_a[0:7] s00_d[0:7]
+;VNAME s00_a[0:7] s01_a[0:7] s02_a[0:7] s03_a[0:7] s00_d[0:7] s01_d[0:7]  s02_d[0:7] s03_d[0:7] 
+;+ s10_a[0:7] s11_a[0:7] s12_a[0:7] s13_a[0:7] s10_d[0:7] s11_d[0:7]  s12_d[0:7]  s13_d[0:7]
+;+ s20_a[0:7]  s21_a[0:7] s22_a[0:7] s23_a[0:7] s20_d[0:7] s21_d[0:7]  s22_d[0:7]  s23_d[0:7]
+;+ s30_a[0:7]  s31_a[0:7] s32_a[0:7] s33_a[0:7] s30_d[0:7] s31_d[0:7]  s32_d[0:7]  s33_d[0:7]
+
+; tunit sets the time unit.
+tunit ns
+; trise specifies the rise time of each input vector.
+trise 100
+; tfall specifies the fall time of each input vector.
+tfall 100
+
+
+vih 1.2
+vil 0 
+vth 0.6
+
+50 00 84
+;50  4f 67 74 02 84 85 92 77
+;+ 5a 63 57 b7 be fb 5b a9
+;+ 92 e8 9c e0 be fb 5b a9
+;+ ba 42 ac 24 f4 2c 91 36
+
+500 4f 84
+;1000 4f 67 74 02 84 85 92 77
+;+ 5a 63 57 b7 be fb 5b a9
+;+ 92 e8 9c e0 be fb 5b a9
+;+ ba 42 ac 24 f4 2c 91 36
+
+
+1000 ff 84
+
+1500 4f 84

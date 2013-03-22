@@ -1,0 +1,203 @@
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 900x785+690+168
+Mdi:ArrangeIcons
+wm geometry . 900x785+690+167
+Mdi:ArrangeIcons
+wm geometry . 900x785+690+166
+Mdi:ArrangeIcons
+wm geometry . 900x785+690+165
+Mdi:ArrangeIcons
+wm geometry . 900x785+690+164
+Mdi:ArrangeIcons
+wm geometry . 900x785+690+157
+Mdi:ArrangeIcons
+wm geometry . 900x785+690+155
+Mdi:ArrangeIcons
+wm geometry . 900x785+690+153
+Mdi:ArrangeIcons
+wm geometry . 900x785+690+143
+Mdi:ArrangeIcons
+wm geometry . 900x785+690+141
+Mdi:ArrangeIcons
+wm geometry . 900x785+690+133
+Mdi:ArrangeIcons
+wm geometry . 900x785+690+131
+Mdi:ArrangeIcons
+wm geometry . 900x785+690+130
+Mdi:ArrangeIcons
+wm geometry . 900x785+690+129
+Mdi:ArrangeIcons
+wm geometry . 900x785+690+128
+ScopeSigMgr:loadpffile /home/user2/spring13/asc2171/avlsi/project/ELEN6321/simulation_vlsi/aes_addround_key/addround.tr0 1 openonly
+pf:read PF:1 i(vclk)
+Graph addsignal WF:1:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:1 i(vvdd)
+Graph addsignal WF:1:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+pf:read PF:1 v(s00w_i0)
+Graph addsignal WF:1:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+ScopeSigMgr:loadpffile /home/user2/spring13/asc2171/avlsi/project/ELEN6321/simulation_vlsi/aes_addround_key/addround.tr0 1 replace
+Mdi:Resize 619 568
+Mdi:Move 5 5
+Graph:Select Graph0
+ScopeSigMgr:loadpffile /home/user2/spring13/asc2171/avlsi/project/ELEN6321/simulation_vlsi/aes_addround_key/addround.tr0 1 replace
+Mdi:ArrangeIcons
+wm geometry . 900x785+690+129
+ScopeSigMgr:loadpffile /home/user2/spring13/asc2171/avlsi/project/ELEN6321/simulation_vlsi/aes_addround_key/addround.tr0 1 replace
+ScopeSigMgr:loadpffile /home/user2/spring13/asc2171/avlsi/project/ELEN6321/simulation_vlsi/aes_addround_key/addround.tr0 1 replace
+Mdi:ArrangeIcons
+wm geometry . 900x785+690+130
+Mdi:ArrangeIcons
+wm geometry . 900x785+690+131
+Mdi:ArrangeIcons
+wm geometry . 900x785+690+132
+Mdi:ArrangeIcons
+wm geometry . 900x785+690+133
+Mdi:ArrangeIcons
+wm geometry . 900x785+690+134
+Mdi:ArrangeIcons
+wm geometry . 900x785+690+136
+Mdi:ArrangeIcons
+wm geometry . 900x785+690+137
+Mdi:ArrangeIcons
+wm geometry . 900x785+658+141
+Mdi:ArrangeIcons
+wm geometry . 900x785+654+142
+Mdi:ArrangeIcons
+wm geometry . 900x785+653+143
+Mdi:ArrangeIcons
+wm geometry . 900x785+652+143
+Mdi:ArrangeIcons
+wm geometry . 900x785+651+144
+Mdi:ArrangeIcons
+wm geometry . 900x785+650+144
+Mdi:ArrangeIcons
+wm geometry . 900x785+649+144
+Mdi:ArrangeIcons
+wm geometry . 900x785+648+145
+Mdi:ArrangeIcons
+wm geometry . 900x785+646+145
+Mdi:ArrangeIcons
+wm geometry . 900x785+645+145
+Mdi:ArrangeIcons
+wm geometry . 900x785+643+146
+Mdi:ArrangeIcons
+wm geometry . 900x785+641+147
+Mdi:ArrangeIcons
+wm geometry . 900x785+639+148
+Mdi:ArrangeIcons
+wm geometry . 900x785+631+150
+Mdi:ArrangeIcons
+wm geometry . 900x785+623+152
+Mdi:ArrangeIcons
+wm geometry . 900x785+603+158
+Mdi:ArrangeIcons
+wm geometry . 900x785+581+170
+Mdi:ArrangeIcons
+wm geometry . 900x785+573+172
+Mdi:ArrangeIcons
+wm geometry . 900x785+562+176
+Mdi:ArrangeIcons
+wm geometry . 900x785+561+176
+Mdi:ArrangeIcons
+wm geometry . 900x785+560+177
+Mdi:ArrangeIcons
+wm geometry . 900x785+561+177
+Mdi:ArrangeIcons
+wm geometry . 900x785+562+176
+Mdi:ArrangeIcons
+wm geometry . 900x785+563+176
+Mdi:ArrangeIcons
+wm geometry . 900x785+563+175
+Mdi:ArrangeIcons
+wm geometry . 900x785+563+174
+Mdi:ArrangeIcons
+wm geometry . 900x785+563+172
+Mdi:ArrangeIcons
+wm geometry . 900x785+562+170
+Mdi:ArrangeIcons
+wm geometry . 900x785+561+168
+Mdi:ArrangeIcons
+wm geometry . 900x785+561+166
+Mdi:ArrangeIcons
+wm geometry . 900x785+560+164
+Mdi:ArrangeIcons
+wm geometry . 900x785+560+161
+Mdi:ArrangeIcons
+wm geometry . 900x785+556+143
+Mdi:ArrangeIcons
+wm geometry . 900x785+556+141
+Mdi:ArrangeIcons
+wm geometry . 900x785+556+133
+Mdi:ArrangeIcons
+wm geometry . 900x785+556+131
+Mdi:ArrangeIcons
+wm geometry . 900x785+556+130
+Mdi:ArrangeIcons
+wm geometry . 900x785+556+128
+Mdi:ArrangeIcons
+wm geometry . 900x785+556+127
+Mdi:ArrangeIcons
+wm geometry . 900x785+556+126
+Mdi:ArrangeIcons
+wm geometry . 900x785+556+125
+ScopeSigMgr:loadpffile /home/user2/spring13/asc2171/avlsi/project/ELEN6321/simulation_vlsi/aes_addround_key/addround.tr0 1 replace
+ScopeSigMgr:loadpffile /home/user2/spring13/asc2171/avlsi/project/ELEN6321/simulation_vlsi/aes_addround_key/addround.tr0 1 replace
+ScopeSigMgr:Unload 0 {{(1) addround.tr0}}
+ScopeSigMgr:Unload 0
+ScopeSigMgr:loadpffile /home/user2/spring13/asc2171/avlsi/project/ELEN6321/simulation_vlsi/aes_addround_key/addround.tr0 1 openonly
+pf:read PF:8 i(vvdd)
+Graph addsignal WF:8:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:8 v(clk)
+Graph addsignal WF:8:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+ScopeSigMgr:loadpffile /home/user2/spring13/asc2171/avlsi/project/ELEN6321/simulation_vlsi/aes_addround_key/addround.tr0 1 replace
+ScopeSigMgr:loadpffile /home/user2/spring13/asc2171/avlsi/project/ELEN6321/simulation_vlsi/aes_addround_key/addround.tr0 1 replace
+ScopeSigMgr:loadpffile /home/user2/spring13/asc2171/avlsi/project/ELEN6321/simulation_vlsi/aes_addround_key/addround.tr0 1 replace
+ScopeSigMgr:loadpffile /home/user2/spring13/asc2171/avlsi/project/ELEN6321/simulation_vlsi/aes_addround_key/addround.tr0 1 replace
+ScopeSigMgr:loadpffile /home/user2/spring13/asc2171/avlsi/project/ELEN6321/simulation_vlsi/aes_addround_key/addround.tr0 1 replace
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisY(1,0)} -range {{-268u -136u } {82.5n 165n } {0.593 1.286 }}
+Mdi:FullSize
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisY(1,0)} -range {all all all}
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisY(1,0)} -range {all all all}
+Graph:DSel
+Graph:Select Graph0
+Graph axisconfig {AxisY(1,0) AxisX(0)} -range {{0.060047338769341 -2.0318393325202} {33.333n 129.73n}}
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisY(1,0)} -range {{-600u 200u } {-40n 200n } {-7.0 5.0 }}
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisY(1,0)} -range {{-0.00175 0.00125 } {-200n 400n } {-20.0 20.0 }}
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisY(1,0)} -range {all all all}
+Graph:DSel
+pf:read PF:12 v(s00ld_r)
+Graph addsignal WF:12:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal10
+pf:read PF:12 v(s00w_i0)
+Graph addsignal WF:12:4 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal11
+pf:read PF:12 v(s00w_i1)
+Graph addsignal WF:12:5 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal12
+pf:read PF:12 v(s00w_i2)
+Graph addsignal WF:12:6 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal13
+pf:read PF:12 v(s00w_i3)
+Graph addsignal WF:12:7 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal14
+pf:read PF:12 v(s00w_i4)
+Graph addsignal WF:12:8 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal15
+pf:read PF:12 v(s00w_i5)
+Graph addsignal WF:12:9 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal16
+pf:read PF:12 v(s00w_i6)
+Graph addsignal WF:12:10 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal17
+pf:read PF:12 v(s00w_i7)
+Graph addsignal WF:12:11 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal18
+pf:read PF:12 v(text_in2)
+Graph addsignal WF:12:12 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal19

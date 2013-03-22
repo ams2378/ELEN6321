@@ -1,0 +1,24 @@
+* "simulator" "HSPICE" 
+* "version" "A-2007.09"
+* "format" "HSP"
+* "rundate" "19:27:40 02/23/2013 "
+* "netlist" "xorgate.sp "
+* "runtitle" "*include model and subckts"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000f       
+.nodeset
++ d0_p_in =  10.0000m       
++ d1_p_in =  10.0000m       
++ d_p_out =   5.5851n       
++ n1 =   1.2000        
++ n2 =   1.4948n       
++ n3 =   1.2000        
++ n4 =   1.5405n       
++ vdd =   1.2000        
++ x5xor2x1ts.net35 =   3.8170n       
++ x5xor2x1ts.nmin1 =   1.2000        
++ x5xor2x1ts.nmin2 =   1.2000        
+***   END: Saved Operating Point ***                     

@@ -1,5 +1,5 @@
 Using: /usr/bin/time -p /usr/cad/meta/rel/hspice/linux/hspice or.sp
- ****** HSPICE  --  A-2007.09  32-BIT    (Aug 28 2007) 16:04:35 02/23/2013 linux
+ ****** HSPICE  --  A-2007.09  32-BIT    (Aug 28 2007) 20:08:25 02/23/2013 linux
   Copyright (C) 2007 Synopsys, Inc. All Rights Reserved.                        
   Unpublished-rights reserved under US copyright laws.
   This program is protected by law and is subject to the 
@@ -10,8 +10,8 @@ Using: /usr/bin/time -p /usr/cad/meta/rel/hspice/linux/hspice or.sp
   Input File: or.sp                                                             
  lic:  
  lic: FLEXlm: v8.5b 
- lic: USER:   jy2525               HOSTNAME: vlsi12 
- lic: HOSTID: e091f595b530         PID:      3972 
+ lic: USER:   asc2171              HOSTNAME: vlsi9 
+ lic: HOSTID: e091f595b94f         PID:      27097 
  lic: Using FLEXlm license file: 
  lic: 27000@bioeeserv.ee.columbia.edu 
  lic: Checkout 1 hspice;  Encryption code: DEA048380846260FC020 
@@ -39252,7 +39252,7 @@ Using: /usr/bin/time -p /usr/cad/meta/rel/hspice/linux/hspice or.sp
        runlvl= 5       bypass= 0      mbypass=   2.00   bytol= 100.00u
  ***********************************************************************
 
-1****** HSPICE  --  A-2007.09  32-BIT    (Aug 28 2007) 16:04:35 02/23/2013 linux
+1****** HSPICE  --  A-2007.09  32-BIT    (Aug 28 2007) 20:08:25 02/23/2013 linux
  ******  
  *include model and subckts                                                     
   ******  circuit name directory                                                
@@ -39267,7 +39267,7 @@ Using: /usr/bin/time -p /usr/cad/meta/rel/hspice/linux/hspice or.sp
         5 x1or2xlts.x3.                   lpnfet             1.00 
         6 x1or2xlts.x4.                   lppfet             1.00 
         7 x1or2xlts.x5.                   lppfet             1.00 
-1****** HSPICE  --  A-2007.09  32-BIT    (Aug 28 2007) 16:04:35 02/23/2013 linux
+1****** HSPICE  --  A-2007.09  32-BIT    (Aug 28 2007) 20:08:25 02/23/2013 linux
  ******  
  *include model and subckts                                                     
   ******  mos   model parameters           tnom=  25.000 temp=  25.000          
@@ -41462,7 +41462,7 @@ Model Name: lppch
   Opening plot unit= 15
  file=or.pa0                                                                   
 
-1****** HSPICE  --  A-2007.09  32-BIT    (Aug 28 2007) 16:04:35 02/23/2013 linux
+1****** HSPICE  --  A-2007.09  32-BIT    (Aug 28 2007) 20:08:25 02/23/2013 linux
  ******  
  *include model and subckts                                                     
   ******  operating point information      tnom=  25.000 temp=  25.000          
@@ -41525,7 +41525,7 @@ b
 
 
           ***** job concluded
-1****** HSPICE  --  A-2007.09  32-BIT    (Aug 28 2007) 16:04:35 02/23/2013 linux
+1****** HSPICE  --  A-2007.09  32-BIT    (Aug 28 2007) 20:08:25 02/23/2013 linux
  ******  
  *include model and subckts                                                     
   ******  job statistics summary           tnom=  25.000 temp=  25.000          
@@ -41540,14 +41540,14 @@ b
     analysis           time    # points   tot. iter  conv.iter
 
     op point           0.00           1          10
-    transient          0.27          34        2043         769 rev=       186
-    readin             0.85
-    errchk             0.07
+    transient          0.28          34        2043         769 rev=       186
+    readin             0.92
+    errchk             0.06
     setup              0.00
     output             0.00
-           total cpu time          1.19 seconds
-               job started at  16:04:35 02/23/2013
-               job ended   at  16:04:37 02/23/2013
+           total cpu time          1.27 seconds
+               job started at  20:08:25 02/23/2013
+               job ended   at  20:08:26 02/23/2013
 
 
  Init: hspice initialization file: /usr/cad/meta/rel/hspice/hspice.ini

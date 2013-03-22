@@ -1,0 +1,82 @@
+* "simulator" "HSPICE" 
+* "version" "A-2007.09"
+* "format" "HSP"
+* "rundate" "17:13:32 02/23/2013 "
+* "netlist" "dflipflopwddl.sp "
+* "runtitle" "*include model and subckts"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000f       
+.nodeset
++ clk =  10.0000m       
++ d =  10.0000m       
++ nd =   1.2000        
++ nett_0 =   1.2000        
++ nett_1 =   1.6263n       
++ nett_2 =   1.6263n       
++ nett_3 =   1.2000        
++ q =   1.6463n       
++ q1 =   1.2000        
++ q2 =   1.6263n       
++ qb =   1.2000        
++ reset =   1.2000        
++ vdd =   1.2000        
++ x1dfftrx2ts.c =   1.2857n       
++ x1dfftrx2ts.cn =   1.2000        
++ x1dfftrx2ts.hnet23 =   1.2000        
++ x1dfftrx2ts.hnet27 =  56.3454m       
++ x1dfftrx2ts.hnet28 = 964.5345m       
++ x1dfftrx2ts.hnet33 =   3.1778n       
++ x1dfftrx2ts.m =   1.2246n       
++ x1dfftrx2ts.net64 =   1.2000        
++ x1dfftrx2ts.net67 = 199.2102m       
++ x1dfftrx2ts.net80 =   2.6944n       
++ x1dfftrx2ts.net83 =   4.1020n       
++ x1dfftrx2ts.net84 =   1.7549n       
++ x1dfftrx2ts.pm =   1.2000        
++ x1dfftrx2ts.s =   1.2000        
++ x2dfftrx2ts.c =   1.3907n       
++ x2dfftrx2ts.cn =   1.2000        
++ x2dfftrx2ts.hnet23 =   1.1758        
++ x2dfftrx2ts.hnet27 = 639.3199p       
++ x2dfftrx2ts.hnet28 =   7.8378n       
++ x2dfftrx2ts.hnet33 =   4.5623n       
++ x2dfftrx2ts.m =   1.2000        
++ x2dfftrx2ts.net64 = 216.6314m       
++ x2dfftrx2ts.net67 =   1.2000        
++ x2dfftrx2ts.net80 = 971.4362m       
++ x2dfftrx2ts.net83 =   1.2000        
++ x2dfftrx2ts.net84 =   1.2000        
++ x2dfftrx2ts.pm =   9.8266n       
++ x2dfftrx2ts.s =   1.8978n       
++ x3dfftrx2ts.c =   1.4326n       
++ x3dfftrx2ts.cn =   1.2000        
++ x3dfftrx2ts.hnet23 =   1.2000        
++ x3dfftrx2ts.hnet27 =  56.3454m       
++ x3dfftrx2ts.hnet28 = 971.4362m       
++ x3dfftrx2ts.hnet33 =   2.5785n       
++ x3dfftrx2ts.m =   4.5343n       
++ x3dfftrx2ts.net64 =   1.2000        
++ x3dfftrx2ts.net67 =   1.2000        
++ x3dfftrx2ts.net80 = 971.4362m       
++ x3dfftrx2ts.net83 =   1.2000        
++ x3dfftrx2ts.net84 =   1.2000        
++ x3dfftrx2ts.pm =   1.2000        
++ x3dfftrx2ts.s =   1.8978n       
++ x4dfftrx2ts.c =   1.2439n       
++ x4dfftrx2ts.cn =   1.2000        
++ x4dfftrx2ts.hnet23 =   1.1758        
++ x4dfftrx2ts.hnet27 = 639.3199p       
++ x4dfftrx2ts.hnet28 =   7.8378n       
++ x4dfftrx2ts.hnet33 =   4.5623n       
++ x4dfftrx2ts.m =   1.2000        
++ x4dfftrx2ts.net64 = 216.6314m       
++ x4dfftrx2ts.net67 = 199.2102m       
++ x4dfftrx2ts.net80 =   6.0041n       
++ x4dfftrx2ts.net83 =  10.7214n       
++ x4dfftrx2ts.net84 =   1.7549n       
++ x4dfftrx2ts.pm =   9.8266n       
++ x4dfftrx2ts.s =   1.2000        
+***   END: Saved Operating Point ***                     

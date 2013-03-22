@@ -1,0 +1,70 @@
+proc Graph:LoadGraph2 {filename {graph {}}} {
+
+    global tk_status
+    global GrXY Graph
+    set Graph(result) Passed
+
+    # Display feedback to user
+    set tk_status {Open Graph: Creating Graph}
+    # update idletasks
+
+    set graphpath [string trimright $filename graph.def]
+    if {$graph=={}} {
+        # Load needed plotfiles if absent
+
+        set pfwf [Graph:GetSigs3 $graphpath {{{{/home/user2/spring13/asc2171/avlsi/project/ELEN6321/simulation_vlsi/wddlxor/wddlxor.tr0 i(vwddlvdd)}} {} {} 0} {{{/home/user2/spring13/asc2171/avlsi/project/ELEN6321/simulation_vlsi/wddlxor/xorgate.tr0 i(vxorvdd)}} {} {} 0} {{{/home/user2/spring13/asc2171/avlsi/project/ELEN6321/simulation_vlsi/wddlxor/xorgate.tr0 v(d0_p_in)}} {} {} 0} {{{/home/user2/spring13/asc2171/avlsi/project/ELEN6321/simulation_vlsi/wddlxor/xorgate.tr0 v(d1_p_in)}} {} {} 0} {{{/home/user2/spring13/asc2171/avlsi/project/ELEN6321/simulation_vlsi/wddlxor/xorgate.tr0 v(d_p_out)}} {} {} 0}}]
+
+        set pf [lindex $pfwf 0 ]
+
+        set wf [lindex $pfwf 1 ]
+
+        # Create the new graph
+        set graph [GrXY:NewGraphConfig  {-type xy -font {-family {OF Helvetica} -size 10} -fg {white} -bg {black} -actfg {red} 	        -graphbg {black} -legend right -grid no -sighi legend -maxforfb 10000 		-minwidth 2 -minheight 2 -gridtype - -gridlinestyle {-   } 		-griddashlength 1 -siglinewidth 1 -rainbow 0 -sigcolors {green magenta cyan yellow #FF8000} -prezoom {0.000000e+00 0.000000e+00 1.000000e+00 0.000000e+00} -signames {leaf} -anatracehi 1 -digitracehi 1 -digisnap 0 -busdisp hex} {1310} {818}]
+    } else {
+        # Load needed plotfiles if absent
+
+        set pfwf [Graph:GetSigs3 $graphpath {{{{/home/user2/spring13/asc2171/avlsi/project/ELEN6321/simulation_vlsi/wddlxor/wddlxor.tr0 i(vwddlvdd)}} {} {} 0} {{{/home/user2/spring13/asc2171/avlsi/project/ELEN6321/simulation_vlsi/wddlxor/xorgate.tr0 i(vxorvdd)}} {} {} 0} {{{/home/user2/spring13/asc2171/avlsi/project/ELEN6321/simulation_vlsi/wddlxor/xorgate.tr0 v(d0_p_in)}} {} {} 0} {{{/home/user2/spring13/asc2171/avlsi/project/ELEN6321/simulation_vlsi/wddlxor/xorgate.tr0 v(d1_p_in)}} {} {} 0} {{{/home/user2/spring13/asc2171/avlsi/project/ELEN6321/simulation_vlsi/wddlxor/xorgate.tr0 v(d_p_out)}} {} {} 0}} 0]
+
+        set pf [lindex $pfwf 0 ]
+
+        set wf [lindex $pfwf 1 ]
+
+        # Reconfigure graph
+        Graph:Select $graph
+        Graph itemselect all add
+        Graph delsignal selected
+        Graph:ClearItems
+        $graph config -type xy -font {-family {OF Helvetica} -size 10} -fg {white} -bg {black} -actfg {red} 	        -graphbg {black} -legend right -grid no -sighi legend -maxforfb 10000 		-minwidth 2 -minheight 2 -gridtype - -gridlinestyle {-   } 		-griddashlength 1 -siglinewidth 1 -rainbow 0 -sigcolors {green magenta cyan yellow #FF8000} -prezoom {0.000000e+00 0.000000e+00 1.000000e+00 0.000000e+00} -signames {leaf} -anatracehi 1 -digitracehi 1 -digisnap 0 -busdisp hex
+    }
+    # Set graph colormap
+    set Graph($graph,cmap) 1
+
+    # Configure Graph Title
+    $graph itemconfig GraphTitle -text {Graph2}
+
+    # Restore Mem Label variables
+    # Add the signals to the graph with appropriate attributes
+    $graph addsignal $wf -region {0 1 2 3 4} -yview {real(y) real(y) real(y) real(y) real(y)} -xview {real(x) real(x) real(x) real(x) real(x)} -rainbow {0 0 0 0 0} -rbcolors {{} {} {} {} {}} -fill {green magenta cyan yellow #FF8000} -linestyle {- - - - -} -width {1 1 1 1 1} -symbol {{} {} {} {} {}} -symwidth {10 10 10 10 10} -bar {{} {} {} {} {}} -barwidth {0 0 0 0 0} -baseline {0.0 0.0 0.0 0.0 0.0} -stipple {{} {} {} {} {}} -label {i(vwddlvdd) i(vxorvdd) v(d0_p_in) v(d1_p_in) v(d_p_out)} -xaxis {0 0 0 0 0} -yaxis {0 0 0 0 0} -tracehi {2 2 2 2 2} -bus {{} {} {} {} {}} -segdisp {y y y y y} -index {0 1 2 3 4}
+    # Configure the axes
+    $graph axisconfig {AxisY(0,0) AxisX(0) AxisY(1,0) AxisY(2,0) AxisY(3,0) AxisY(4,0)} -scale {linear linear linear linear linear linear} -gridvis {no no no no no no} -linticks {{} {} {} {} {} {}} -logticks {{} {} {} {} {} {}} -subticks {0 0 0 0 0 0} -label {(A) t(s) (A) (V) (V) (V)} -digiview {{} {} {} {} {} {}} -lock {no no no no no no} -slider {no no no no no no} -range {{-38.608941395069u 21.251544524148n} {0.0 9.9999997473788u} {-33.806398278102u 10.627852375933n} {0.0099999997764826 1.2000000476837} {0.0099999997764826 1.2000000476837} {-0.0048164683394134 1.21000623703}} -unitscale {auto auto auto auto auto auto}
+
+
+    # Restore Measurements
+
+    # Restore Markers
+
+
+    # Restore Mem Label positions
+    $graph raise MemLbl
+
+    # Clear feedback
+    set tk_status {}
+    #update idletasks
+}
+
+# Call the new procedure
+if [catch {AimBusy "Graph:LoadGraph2 $Graph(filename) $graph" . watch} msg] {
+    AimMessage $msg error "cant read graph" modal
+}
+# Delete the new procedure
+rename Graph:LoadGraph2 {}

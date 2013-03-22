@@ -1,7 +1,7 @@
 *include model and subckts
 .lib '/tools2/courses/ee6321/share/IBM_PDK/cmrf8sf/relDM/HSPICE/models/allModels.inc' tt
 .include '/tools2/courses/ee6321/share/IBM_PDK/cmrf8sf/relDM/HSPICE/models/design.inc'
-.include '/user4/spring13/jy2525/lib/subckts.sp'
+.include '/user2/spring13/asc2171/avlsi/project/ELEN6321/simulation_vlsi/lib/subckts.sp'
 
 .TEMP 25
 *define options
@@ -23,4 +23,5 @@ vandvdd VDD 0 dc=1.2
 *measurements
 .TRAN 300n 10u
 .MEASURE avg_pow AVG power FROM=1u TO=10u
+.PLOT TRAN P(vandvdd) 
 .END

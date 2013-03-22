@@ -1,7 +1,7 @@
 #@ # 
 #@ # Running dc_shell Version A-2007.12-SP4 for linux -- May 31, 2008
-#@ # Date:   Mon Mar 11 19:07:40 2013
-#@ # Run by: ams2378@micro1
+#@ # Date:   Mon Mar 18 23:56:04 2013
+#@ # Run by: asc2171@micro8
 #@ 
 
 source /tools4/syn2007.12/admin/setup/.synopsys_dc.setup
@@ -3696,7 +3696,7 @@ source /tools4/syn2007.12/admin/setup/.synopsys_dc.setup
 #@ 
 #@ # -- End source /tools4/syn2007.12/admin/setup/.synopsys_dc.setup
 
-source -echo -verbose /home/user2/spring13/ams2378/ELEN6321/dc_shell_WDDL/tclfiles/proj_addroundkey.tcl
+source -echo -verbose /home/user2/spring13/asc2171/avlsi/project/ELEN6321/dc_shell_WDDL/tclfiles/proj_addroundkey.tcl
 #@ #########################################
 #@ # TCL script for Design Compiler        #
 #@ # 2012 Mingoo Seok                      #
@@ -3705,9 +3705,9 @@ source -echo -verbose /home/user2/spring13/ams2378/ELEN6321/dc_shell_WDDL/tclfil
 #@ #########################################
 #@ # READ Design and Library               #
 #@ #########################################
-#@ set BEHAVIORROOT "./rtl/aes_core/rtl/"
+#@ set BEHAVIORROOT "./rtl/aes_core/"
 #@ #set top_level
-#@ set top_level aes_addroundkey
+#@ set top_level aes_xor
 #@ source -verbose "common.tcl"
 #@ 
 #@ set search_path [list "." "/tools4/syn2007.12/libraries/syn/"]
@@ -3719,8 +3719,8 @@ source -echo -verbose /home/user2/spring13/ams2378/ELEN6321/dc_shell_WDDL/tclfil
 
 #@ #read_verilog {./rtl/verilog/aes_cipher_top.v}
 #@ #read_verilog {./rtl/verilog/aes_key_expand_.v}
-#@ read_verilog {./rtl/aes_core/rtl/aes_addroundkey.v}
-#@ read_verilog {./rtl/aes_core/rtl/aes_xor.v}
+#@ #read_verilog {./rtl/aes_core/rtl/aes_addroundkey.v}
+#@ read_verilog {./rtl/aes_core/aes_xor.v}
 #@ #read_verilog {./rtl/verilog/aes_rcon.vcd }
 #@ 
 #@ list_designs
@@ -3797,7 +3797,7 @@ source -echo -verbose /home/user2/spring13/ams2378/ELEN6321/dc_shell_WDDL/tclfil
 #@ set_max_fanout 2 [all_inputs]
 #@ set_max_area 0 
 #@ 
-#@ set_fix_multiple_port_nets -all -buffer_constants
+#@ set_fix_multiple_port_nets -all -buffer_constants -feedthroughs
 #@ #set_dont_use ST65GP_250/HS65_GS_IVX2
 #@ 
 #@ #set_ideal_network {resetn}

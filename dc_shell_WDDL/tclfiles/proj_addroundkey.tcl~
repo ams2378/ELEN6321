@@ -6,14 +6,14 @@
 #########################################
 # READ Design and Library               #
 #########################################
-set BEHAVIORROOT "./rtl/aes_core/rtl/"
+set BEHAVIORROOT "./rtl/aes_core/"
 #set top_level
-set top_level aes_addroundkey
+set top_level aes_xor
 source -verbose "common.tcl"
 #read_verilog {./rtl/verilog/aes_cipher_top.v}
 #read_verilog {./rtl/verilog/aes_key_expand_.v}
-read_verilog {./rtl/aes_core/rtl/aes_xor.v}
-read_verilog {./rtl/aes_core/rtl/aes_addroundkey.v}
+#read_verilog {./rtl/aes_core/rtl/aes_addroundkey.v}
+read_verilog {./rtl/aes_core/aes_xor.v}
 #read_verilog {./rtl/verilog/aes_rcon.vcd }
 
 list_designs
@@ -41,7 +41,7 @@ set_max_fanout 4 $top_level
 set_max_fanout 2 [all_inputs]
 set_max_area 0 
 
-set_fix_multiple_port_nets -all -buffer_constants
+set_fix_multiple_port_nets -all -buffer_constants -feedthroughs
 #set_dont_use ST65GP_250/HS65_GS_IVX2
 
 #set_ideal_network {resetn}

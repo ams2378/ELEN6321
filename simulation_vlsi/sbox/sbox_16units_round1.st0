@@ -1,0 +1,46 @@
+***** HSPICE  --  A-2007.09  32-BIT    (Aug 28 2007) 12:50:53 03/08/2013 linux
+ Input File: sbox_16units_round1.sp
+ lic:
+ lic: FLEXlm: v8.5b
+ lic: USER:   asc2171              HOSTNAME: micro15
+ lic: HOSTID: e091f5975684         PID:      30841
+ lic: Using FLEXlm license file:
+ lic: 27000@bioeeserv.ee.columbia.edu
+ lic: Checkout 1 hspice;  Encryption code: DEA048380846260FC020
+ lic: License/Maintenance for hspice will expire on 14-jun-2013/2011.09
+ lic: 1(in_use)/50(total) FLOATING license(s) on SERVER bioeeserv.ee.columbia.ed
+ lic:
+ Init: hspice initialization file: /usr/cad/meta/rel/hspice/hspice.ini
+ init: begin read circuit files,  cpu clock=  1.60E-01
+       option fast
+       option post     =     1.00
+       option accura   =     1.00
+       option gmin     =    1.000E-15
+       option gmindc   =    1.000E-15
+       option method   = trap
+       option timere   =    1.000E-09
+ init: end read circuit files,  cpu clock=  4.80E-01 memory=  11886 kb
+ init: begin check errors,  cpu clock=  4.80E-01
+ init: end check errors,  cpu clock=  6.68E+00 memory=  85150 kb
+ init: begin setup matrix, pivot=    10 cpu clock=  6.68E+00
+       establish matrix -- done,  cpu clock=  6.80E+00 memory=  87806 kb
+       re-order matrix -- done,  cpu clock=  7.48E+00 memory= 109838 kb
+ init: end setup matrix,  cpu clock=  7.48E+00 memory= 112931 kb
+ dcop: begin dcop,  cpu clock=  7.49E+00
+ dcop: end dcop,  cpu clock=  1.25E+01 memory= 112931 kb  tot_iter=     110
+ output: sbox_16units_round1.tr0
+ sweep: tran tran0    begin, stop_t=  1.00E-05 #sweeps=**** cpu clock=  1.26E+01
+ tran: time= 1.00000E-06 tot_iter=    2197   conv_iter=     784
+ tran: time= 2.00882E-06 tot_iter=    4746   conv_iter=    1680
+ tran: time= 3.13238E-06 tot_iter=    4758   conv_iter=    1686
+ tran: time= 4.44644E-06 tot_iter=    4764   conv_iter=    1689
+ tran: time= 5.44644E-06 tot_iter=    4768   conv_iter=    1691
+ tran: time= 6.44644E-06 tot_iter=    4772   conv_iter=    1693
+ tran: time= 7.44644E-06 tot_iter=    4776   conv_iter=    1695
+ tran: time= 8.44644E-06 tot_iter=    4780   conv_iter=    1697
+ tran: time= 9.44644E-06 tot_iter=    4784   conv_iter=    1699
+ tran: time= 1.00000E-05 tot_iter=    4788   conv_iter=    1701
+ sweep: tran tran0    end,  cpu clock=  2.67E+02 memory= 113002 kb
+>info:         ***** hspice job concluded
+ Init: hspice initialization file: /usr/cad/meta/rel/hspice/hspice.ini
+ lic: Release hspice token(s)
