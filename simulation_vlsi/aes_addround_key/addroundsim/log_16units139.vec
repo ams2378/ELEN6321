@@ -111,7 +111,7 @@ vth 0.6 FF FF FF FF 0
 +FF FF FF FF 0
 +FF FF FF FF 0
 +FF FF FF FF 0
-;Encryption # 415 
+;Encryption # 139 
 1 fc 20 f3 57 1 
 +31 bd 58 05 1 
 +00 82 66 1e 1 
@@ -128,7 +128,7 @@ vth 0.6 FF FF FF FF 0
 +b1 bc ae 8e 1 
 +f0 2b 14 cf 1 
 +be 18 20 f3 1 
-;Encryption # 416 
+;Encryption # 140 
 50 6f 20 85 4a 1 
 +73 bd 42 3a 1 
 +ff 82 58 b3 1 
@@ -145,20 +145,3 @@ vth 0.6 FF FF FF FF 0
 +6e bc 56 7b 1 
 +a6 2b 60 e9 1 
 +4d 18 5d 92 1 
-;Encryption # 417 
-99 a1 20 d2 18 1 
-+66 bd 4c a6 1 
-+4f 82 a7 e2 1 
-+66 65 58 3a 1 
-+a9 f0 1b 9b 1 
-+1e 83 a4 92 1 
-+c5 ad 61 47 1 
-+9d 14 77 a5 1 
-+1e 41 58 c3 1 
-+4a c6 89 2a 1 
-+62 5b e7 8d 1 
-+13 06 59 f3 1 
-+8e 93 13 92 1 
-+23 bc e3 95 1 
-+cb 2b e4 7d 1 
-+8e 18 97 25 1 

@@ -126,6 +126,6 @@ vclk clk gnd pulse (0 supply0 td tr tf pwA perA )
 
 
 *measurements
-.TRAN 1n 115n 
+.TRAN 1n 99n 
 . MEASURE TRAN -1.2*i(vvdd) START=20n STOP=70n STEP=1n
 .END
