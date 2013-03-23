@@ -1,0 +1,164 @@
+RADIX 44 44 44 44 1
++44 44 44 44 1
++44 44 44 44 1
++44 44 44 44 1
++44 44 44 44 1
++44 44 44 44 1
++44 44 44 44 1
++44 44 44 44 1
++44 44 44 44 1
++44 44 44 44 1
++44 44 44 44 1
++44 44 44 44 1
++44 44 44 44 1
++44 44 44 44 1
++44 44 44 44 1
++44 44 44 44 1
+
+
+IO II II II 00 I
++II II II 00 I
++II II II 00 I
++II II II 00 I
++II II II 00 I
++II II II 00 I
++II II II 00 I
++II II II 00 I
++II II II 00 I
++II II II 00 I
++II II II 00 I
++II II II 00 I
++II II II 00 I
++II II II 00 I
++II II II 00 I
++II II II 00 I
+
+VNAME  s00text_in[7:0] s00w_i[7:0] s00sa_i[7:0] s00sa_o[7:0] s00ld_r
++s01text_in[7:0] s01w_i[7:0] s01sa_i[7:0] s01sa_o[7:0] s01ld_r
++s02text_in[7:0] s02w_i[7:0] s02sa_i[7:0] s02sa_o[7:0] s02ld_r
++s03text_in[7:0] s03w_i[7:0] s03sa_i[7:0] s03sa_o[7:0] s03ld_r
++s10text_in[7:0] s10w_i[7:0] s10sa_i[7:0] s10sa_o[7:0] s10ld_r
++s11text_in[7:0] s11w_i[7:0] s11sa_i[7:0] s11sa_o[7:0] s11ld_r
++s12text_in[7:0] s12w_i[7:0] s12sa_i[7:0] s12sa_o[7:0] s12ld_r
++s13text_in[7:0] s13w_i[7:0] s13sa_i[7:0] s13sa_o[7:0] s13ld_r
++s20text_in[7:0] s20w_i[7:0] s20sa_i[7:0] s20sa_o[7:0] s20ld_r
++s21text_in[7:0] s21w_i[7:0] s21sa_i[7:0] s21sa_o[7:0] s21ld_r
++s22text_in[7:0] s22w_i[7:0] s22sa_i[7:0] s22sa_o[7:0] s22ld_r
++s23text_in[7:0] s23w_i[7:0] s23sa_i[7:0] s23sa_o[7:0] s23ld_r
++s30text_in[7:0] s30w_i[7:0] s30sa_i[7:0] s30sa_o[7:0] s30ld_r
++s31text_in[7:0] s31w_i[7:0] s31sa_i[7:0] s31sa_o[7:0] s31ld_r
++s32text_in[7:0] s32w_i[7:0] s32sa_i[7:0] s32sa_o[7:0] s32ld_r
++s33text_in[7:0] s33w_i[7:0] s33sa_i[7:0] s33sa_o[7:0] s33ld_r
+
+; tunit sets the time unit.
+tunit ns
+; trise specifies the rise time of each input vector.
+trise 1
+; tfall specifies the fall time of each input vector.
+tfall 1
+
+
+vih 1.2 FF FF FF FF 1
++FF FF FF FF 1
++FF FF FF FF 1
++FF FF FF FF 1
++FF FF FF FF 1
++FF FF FF FF 1
++FF FF FF FF 1
++FF FF FF FF 1
++FF FF FF FF 1
++FF FF FF FF 1
++FF FF FF FF 1
++FF FF FF FF 1
++FF FF FF FF 1
++FF FF FF FF 1
++FF FF FF FF 1
++FF FF FF FF 1
+
+
+
+vil 0 FF FF FF FF 1
++FF FF FF FF 1
++FF FF FF FF 1
++FF FF FF FF 1
++FF FF FF FF 1
++FF FF FF FF 1
++FF FF FF FF 1
++FF FF FF FF 1
++FF FF FF FF 1
++FF FF FF FF 1
++FF FF FF FF 1
++FF FF FF FF 1
++FF FF FF FF 1
++FF FF FF FF 1
++FF FF FF FF 1
++FF FF FF FF 1
+
+
+vth 0.6 FF FF FF FF 0
++FF FF FF FF 0
++FF FF FF FF 0
++FF FF FF FF 0
++FF FF FF FF 0
++FF FF FF FF 0
++FF FF FF FF 0
++FF FF FF FF 0
++FF FF FF FF 0
++FF FF FF FF 0
++FF FF FF FF 0
++FF FF FF FF 0
++FF FF FF FF 0
++FF FF FF FF 0
++FF FF FF FF 0
++FF FF FF FF 0
+;Encryption # 220 
+1 91 20 84 6a 1 
++67 bd 89 5f 1 
++54 82 66 f9 1 
++45 65 55 98 1 
++ba f0 8d ef 1 
++b7 83 17 c3 1 
++c5 ad ca 3e 1 
++d9 14 5b 51 1 
++9d 41 f5 2c 1 
++87 c6 13 d9 1 
++a3 5b 96 77 1 
++8a 06 fb 42 1 
++97 93 00 6c 1 
++bd bc c8 19 1 
++fd 2b 88 7e 1 
++e9 18 c5 3d 1 
+;Encryption # 221 
+50 69 20 01 a3 1 
++3d bd 5a 6d 1 
++1f 82 a7 e5 1 
++65 65 e2 4a 1 
++1c f0 bf de 1 
++fd 83 3e 9a 1 
++19 ad 57 d8 1 
++ee 14 9f 3f 1 
++62 41 a6 b3 1 
++37 c6 6d 76 1 
++e0 5b af 8c 1 
++f3 06 cc 3e 1 
++07 93 4e e6 1 
++4f bc 2c 8a 1 
++ae 2b bf 4e 1 
++b6 18 02 11 1 
+;Encryption # 222 
+99 1a 20 fc 6f 1 
++8f bd 31 e6 1 
++f2 82 9e f5 1 
++40 65 fa 69 1 
++9c f0 01 da 1 
++d3 83 80 69 1 
++22 ad 26 2b 1 
++3a 14 05 14 1 
++00 41 14 c3 1 
++49 c6 d1 eb 1 
++67 5b 10 35 1 
++31 06 cb d6 1 
++c7 93 3d 3f 1 
++45 bc d8 17 1 
++71 2b 35 d3 1 
++f2 18 7a e3 1 
