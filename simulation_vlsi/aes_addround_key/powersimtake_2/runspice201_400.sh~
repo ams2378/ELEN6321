@@ -5,7 +5,7 @@ a="addround_16units"
 sp=".sp"
 lis=".lis"
 
-for i in {1..400}
+for i in {201..400}
 do
 spicefile=$a$i$sp;
 lisfile=$a$i$lis;
